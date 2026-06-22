@@ -88,12 +88,12 @@ export const projects: Project[] = [
       "Đấu nối, kiểm tra vận hành và bàn giao hệ thống kèm hướng dẫn theo dõi qua ứng dụng",
     ],
     images: [
-      { src: "/images/mat-troi-tram-bien-ap-110kv/anh-1.jpg", alt: "Điện mặt trời áp mái trạm biến áp 110KV" },
+      { src: "/images/mat-troi-tram-bien-ap-110kv/anh-7.jpg", alt: "Điện mặt trời áp mái trạm biến áp 110KV" },
       { src: "/images/mat-troi-tram-bien-ap-110kv/anh-2.jpg" },
       { src: "/images/mat-troi-tram-bien-ap-110kv/anh-3.jpg" },
       { src: "/images/mat-troi-tram-bien-ap-110kv/anh-4.jpg" },
       { src: "/images/mat-troi-tram-bien-ap-110kv/anh-5.jpg" },
-      { src: "/images/mat-troi-tram-bien-ap-110kv/anh-7.jpg" },
+      { src: "/images/mat-troi-tram-bien-ap-110kv/anh-1.jpg" },
     ],
   },
 ];
