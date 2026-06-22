@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowUpRight, Gauge, Factory } from "lucide-react";
+import { ArrowUpRight, Gauge, Factory, Sun } from "lucide-react";
 
 const services = [
   {
@@ -16,6 +16,13 @@ const services = [
     href: "/dich-vu/dien-nha-xuong",
     points: ["Tính toán tải điện chính xác", "Thi công an toàn, gọn gàng", "Bảo trì & hỗ trợ sau lắp đặt"],
   },
+  {
+    icon: Sun,
+    title: "Thi công Điện mặt trời áp mái",
+    desc: "Tư vấn, thiết kế và thi công hệ thống điện mặt trời áp mái cho hộ gia đình, nhà xưởng và doanh nghiệp — giảm chi phí điện năng, hoàn vốn nhanh và thân thiện với môi trường.",
+    href: "/dich-vu/dien-mat-troi",
+    points: ["Khảo sát mái & tính toán công suất phù hợp", "Lắp đặt tấm pin, inverter đúng tiêu chuẩn", "Hỗ trợ thủ tục đấu nối lên lưới điện quốc gia"],
+  },
 ];
 
 export default function ServicesOverview() {
@@ -31,7 +38,7 @@ export default function ServicesOverview() {
           </p>
         </div>
 
-        <div className="mt-14 grid gap-6 md:grid-cols-2">
+        <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {services.map((s) => (
             <Link
               key={s.title}
