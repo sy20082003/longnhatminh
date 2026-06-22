@@ -17,32 +17,6 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    id: "tvpn-mba-110kv-phan-thiet",
-    title: "Thay van phòng nổ MBA 110KV Phan Thiết",
-    category: "Trạm biến áp",
-    location: "Phan Thiết, Bình Thuận",
-    capacity: "110 KV",
-    year: "2024",
-    summary:
-      "Thực hiện thay thế van phòng nổ máy biến áp 110KV tại trạm Phan Thiết, đảm bảo an toàn vận hành và kéo dài tuổi thọ thiết bị.",
-    details: [
-      "Khảo sát hiện trạng, đánh giá tình trạng van phòng nổ cần thay thế",
-      "Lên phương án thi công đảm bảo an toàn trong môi trường điện áp cao 110KV",
-      "Thay thế van phòng nổ đúng chủng loại, đúng thông số kỹ thuật theo yêu cầu",
-      "Kiểm tra, thử nghiệm sau lắp đặt, bàn giao và nghiệm thu với đơn vị quản lý vận hành",
-    ],
-    images: [
-      { src: "/images/tvpn-mba-110kv-phan-thiet/anh-8.jpg", alt: "Thay van phòng nổ MBA 110KV Phan Thiết" },
-      { src: "/images/tvpn-mba-110kv-phan-thiet/anh-2.jpg" },
-      { src: "/images/tvpn-mba-110kv-phan-thiet/anh-3.jpg" },
-      { src: "/images/tvpn-mba-110kv-phan-thiet/anh-4.jpg" },
-      { src: "/images/tvpn-mba-110kv-phan-thiet/anh-5.jpg" },
-      { src: "/images/tvpn-mba-110kv-phan-thiet/anh-6.jpg" },
-      { src: "/images/tvpn-mba-110kv-phan-thiet/anh-7.jpg" },
-      { src: "/images/tvpn-mba-110kv-phan-thiet/anh-1.jpg" },
-    ],
-  },
-  {
     id: "cc-thep-ma-kem-bulong-tbt-ba-queo",
     title: "Cung cấp thép mạ kẽm bulong TBT Ba Quẹo",
     category: "Trạm biến áp",
