@@ -6,7 +6,7 @@ import GalleryCard from "@/components/GalleryCard";
 import ProjectModal from "@/components/ProjectModal";
 import { projects } from "@/lib/projects";
 
-const categories = ["Tất cả", "Trạm biến áp", "Điện nhà xưởng"] as const;
+const categories = ["Tất cả", "Trạm biến áp", "Điện nhà xưởng", "Điện mặt trời"] as const;
 
 export default function ThuVienAnhPage() {
   const [activeCategory, setActiveCategory] =
