@@ -27,22 +27,22 @@ export default function Footer() {
           </h4>
           <ul className="mt-5 space-y-3 text-sm">
             <li>
-              <Link href="/" className="text-base text-navy-300 hover:text-white">
+              <Link href="/" className="text-lg text-navy-300 hover:text-white">
                 Trang chủ
               </Link>
             </li>
             <li>
-                <Link href="/gioi-thieu" className="text-base text-navy-300 hover:text-white">
+                <Link href="/gioi-thieu" className="text-lg text-navy-300 hover:text-white">
                   Giới thiệu
               </Link>
             </li>
             <li>
-              <Link href="/thu-vien-anh" className="text-base text-navy-300 hover:text-white">
+              <Link href="/thu-vien-anh" className="text-lg text-navy-300 hover:text-white">
                 Thư viện ảnh
               </Link>
             </li>
             <li>
-              <Link href="/lien-he" className="text-base text-navy-300 hover:text-white">
+              <Link href="/lien-he" className="text-lg text-navy-300 hover:text-white">
                 Liên hệ
               </Link>
             </li>
@@ -55,17 +55,17 @@ export default function Footer() {
           </h4>
           <ul className="mt-5 space-y-3 text-sm">
             <li>
-              <Link href="/dich-vu/tram-bien-ap" className="text-base text-navy-300 hover:text-white">
+              <Link href="/dich-vu/tram-bien-ap" className="text-lg text-navy-300 hover:text-white">
                 Thiết kế & Thi công Trạm biến áp
               </Link>
             </li>
             <li>
-              <Link href="/dich-vu/dien-nha-xuong" className="text-base text-navy-300 hover:text-white">
+              <Link href="/dich-vu/dien-nha-xuong" className="text-lg text-navy-300 hover:text-white">
                 Thiết kế & Thi công Điện nhà xưởng
               </Link>
             </li>
             <li>
-              <Link href="/dich-vu/dien-mat-troi" className="text-base text-navy-300 hover:text-white">
+              <Link href="/dich-vu/dien-mat-troi" className="text-lg text-navy-300 hover:text-white">
                 Thi công Điện mặt trời áp mái
               </Link>
             </li>
