@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
+import Image from "next/image";
 
 const highlights = [
   "Đội ngũ kỹ sư, công nhân nhiều năm kinh nghiệm thực tiễn",
@@ -14,7 +15,13 @@ export default function AboutPreview() {
       <div className="container-px mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-2">
         <div className="relative">
           <div className="overflow-hidden rounded-3xl shadow-soft">
-            <AboutIllustration />
+            <Image
+              src="/images/logo3.png"
+              alt="Long Nhật Minh - Thi công điện công nghiệp"
+              width={560}
+              height={420}
+              className="h-full w-full object-cover"
+            />
           </div>
           <div className="absolute -bottom-6 -right-6 hidden rounded-2xl bg-navy-900 px-6 py-5 text-white shadow-soft sm:block">
             <p className="text-3xl font-extrabold text-gold-400">10+</p>
