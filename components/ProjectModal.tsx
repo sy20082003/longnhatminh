@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { X, ChevronLeft, ChevronRight, MapPin, Gauge, Calendar } from "lucide-react";
-import ProjectIllustration from "./ProjectIllustration";
+import Image from "next/image";
 import type { Project } from "@/lib/projects";
 
 export default function ProjectModal({
@@ -52,10 +52,11 @@ export default function ProjectModal({
 
         {/* Main image */}
         <div className="relative aspect-[16/10] w-full overflow-hidden bg-navy-900">
-          <ProjectIllustration
-            variant={project.images[activeImg].variant}
-            paletteIndex={project.images[activeImg].paletteIndex}
-            className="h-full w-full"
+          <Image
+            src={project.images[activeImg].src}
+            alt={project.images[activeImg].alt ?? project.title}
+            fill
+            className="object-cover"
           />
 
           {project.images.length > 1 && (
@@ -91,14 +92,15 @@ export default function ProjectModal({
               <button
                 key={idx}
                 onClick={() => setActiveImg(idx)}
-                className={`h-14 w-20 shrink-0 overflow-hidden rounded-lg border-2 transition-colors ${
+                className={`relative h-14 w-20 shrink-0 overflow-hidden rounded-lg border-2 transition-colors ${
                   idx === activeImg ? "border-navy-600" : "border-transparent opacity-70"
                 }`}
               >
-                <ProjectIllustration
-                  variant={img.variant}
-                  paletteIndex={img.paletteIndex}
-                  className="h-full w-full"
+                <Image
+                  src={img.src}
+                  alt={img.alt ?? `${project.title} - ảnh ${idx + 1}`}
+                  fill
+                  className="object-cover"
                 />
               </button>
             ))}
