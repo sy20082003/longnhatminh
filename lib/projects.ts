@@ -32,14 +32,14 @@ export const projects: Project[] = [
       "Kiểm tra, thử nghiệm sau lắp đặt, bàn giao và nghiệm thu với đơn vị quản lý vận hành",
     ],
     images: [
-      { src: "/images/thay-van-phong-no-mba-110kv-phan-thiet/anh-1.jpg", alt: "Thay van phòng nổ MBA 110KV Phan Thiết" },
+      { src: "/images/thay-van-phong-no-mba-110kv-phan-thiet/anh-8.jpg", alt: "Thay van phòng nổ MBA 110KV Phan Thiết" },
       { src: "/images/thay-van-phong-no-mba-110kv-phan-thiet/anh-2.jpg" },
       { src: "/images/thay-van-phong-no-mba-110kv-phan-thiet/anh-3.jpg" },
       { src: "/images/thay-van-phong-no-mba-110kv-phan-thiet/anh-4.jpg" },
       { src: "/images/thay-van-phong-no-mba-110kv-phan-thiet/anh-5.jpg" },
       { src: "/images/thay-van-phong-no-mba-110kv-phan-thiet/anh-6.jpg" },
       { src: "/images/thay-van-phong-no-mba-110kv-phan-thiet/anh-7.jpg" },
-      { src: "/images/thay-van-phong-no-mba-110kv-phan-thiet/anh-8.jpg" },
+      { src: "/images/thay-van-phong-no-mba-110kv-phan-thiet/anh-1.jpg" },
     ],
   },
   {
@@ -58,8 +58,8 @@ export const projects: Project[] = [
       "Nghiệm thu vật tư và công tác lắp đặt trước khi bàn giao công trình",
     ],
     images: [
-      { src: "/images/cc-thep-ma-kem-bulong-tbt-ba-queo/anh-1.jpg", alt: "Cung cấp thép mạ kẽm bulong TBT Ba Quẹo" },
-      { src: "/images/cc-thep-ma-kem-bulong-tbt-ba-queo/anh-2.jpg" },
+      { src: "/images/cc-thep-ma-kem-bulong-tbt-ba-queo/anh-2.jpg", alt: "Cung cấp thép mạ kẽm bulong TBT Ba Quẹo" },
+      { src: "/images/cc-thep-ma-kem-bulong-tbt-ba-queo/anh-1.jpg" },
       { src: "/images/cc-thep-ma-kem-bulong-tbt-ba-queo/anh-3.jpg" },
       { src: "/images/cc-thep-ma-kem-bulong-tbt-ba-queo/anh-4.jpg" },
       { src: "/images/cc-thep-ma-kem-bulong-tbt-ba-queo/anh-5.jpg" },
