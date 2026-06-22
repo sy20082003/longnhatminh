@@ -1,6 +1,6 @@
 export type ProjectImage = {
-  variant: number;
-  paletteIndex: number;
+  src: string;   // đường dẫn ảnh, vd: "/projects/tba-khu-cong-nghiep/anh-1.jpg"
+  alt?: string;  // mô tả ảnh (tuỳ chọn, tốt cho SEO)
 };
 
 export type Project = {
@@ -32,10 +32,10 @@ export const projects: Project[] = [
       "Hoàn tất hồ sơ pháp lý, được Điện lực phê duyệt đấu nối trước khi đóng điện",
     ],
     images: [
-      { variant: 0, paletteIndex: 0 },
-      { variant: 2, paletteIndex: 1 },
-      { variant: 0, paletteIndex: 2 },
-      { variant: 1, paletteIndex: 3 },
+      { src: "/images/mat-troi-tram-bien-ap-110kv/anh-01.jpg", alt: "Hệ thống điện mặt trời cho dự án trạm biến áp 110kV - Ảnh 1" },
+      { src: "/images/mat-troi-tram-bien-ap-110kv/anh-02.jpg", alt: "Hệ thống điện mặt trời cho dự án trạm biến áp 110kV - Ảnh 2" },
+      { src: "/images/mat-troi-tram-bien-ap-110kv/anh-03.jpg", alt: "Hệ thống điện mặt trời cho dự án trạm biến áp 110kV - Ảnh 3" },
+      { src: "/images/mat-troi-tram-bien-ap-110kv/anh-04.jpg", alt: "Hệ thống điện mặt trời cho dự án trạm biến áp 110kV - Ảnh 4" },
     ],
   },
   {
