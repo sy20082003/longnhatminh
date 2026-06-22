@@ -4,15 +4,13 @@ type Step = {
   desc: string;
 };
 
-export default function ServiceProcess({
-  title,
-  eyebrow,
-  steps,
-}: {
-  title: string;
+type ServiceProcessProps = {
   eyebrow: string;
+  title: string;
   steps: Step[];
-}) {
+};
+
+export default function ServiceProcess({ eyebrow, title, steps }: ServiceProcessProps) {
   return (
     <section className="section-py bg-soft-gradient">
       <div className="container-px mx-auto max-w-7xl">
@@ -23,13 +21,8 @@ export default function ServiceProcess({
 
         <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {steps.map((s, idx) => (
-            <div
-              key={s.title}
-              className="relative rounded-2xl bg-white p-7 shadow-card"
-            >
-              <span className="text-4xl font-extrabold text-navy-100">
-                {s.number}
-              </span>
+            <div key={s.title} className="relative rounded-2xl border border-navy-100 bg-white p-7 shadow-sm">
+              <span className="text-4xl font-extrabold text-navy-200">{s.number}</span>
               <h3 className="mt-3 text-lg font-bold text-navy-900">{s.title}</h3>
               <p className="mt-2 text-sm leading-relaxed text-navy-500">{s.desc}</p>
               {idx < steps.length - 1 && (
