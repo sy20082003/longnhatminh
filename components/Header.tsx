@@ -13,6 +13,7 @@ const navLinks = [
     children: [
       { href: "/dich-vu/tram-bien-ap", label: "Thiết kế & Thi công Trạm biến áp" },
       { href: "/dich-vu/dien-nha-xuong", label: "Thiết kế & Thi công Điện nhà xưởng" },
+      { href: "/dich-vu/dien-mat-troi", label: "Thi công Điện mặt trời áp mái" },
     ],
   },
   { href: "/thu-vien-anh", label: "Thư viện ảnh" },

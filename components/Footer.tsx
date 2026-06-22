@@ -64,6 +64,11 @@ export default function Footer() {
                 Thiết kế & Thi công Điện nhà xưởng
               </Link>
             </li>
+            <li>
+              <Link href="/dich-vu/dien-mat-troi" className="text-navy-300 hover:text-white">
+                Thi công Điện mặt trời áp mái
+              </Link>
+            </li>
           </ul>
         </div>
 
