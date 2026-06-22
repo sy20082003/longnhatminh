@@ -119,8 +119,8 @@ export const projects: Project[] = [
       { src: "/images/mat-troi-tram-bien-ap-110kv/anh-3.jpg" },
       { src: "/images/mat-troi-tram-bien-ap-110kv/anh-4.jpg" },
       { src: "/images/mat-troi-tram-bien-ap-110kv/anh-5.jpg" },
-      { src: "/images/mat-troi-tram-bien-ap-110kv/anh-6.jpg" },
       { src: "/images/mat-troi-tram-bien-ap-110kv/anh-7.jpg" },
     ],
   },
 ];
+ss
