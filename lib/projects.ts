@@ -58,7 +58,7 @@ export const projects: Project[] = [
       "Đo kiểm điện trở tiếp địa sau thi công, lập biên bản nghiệm thu đạt yêu cầu kỹ thuật",
     ],
     images: [
-      { src: "/images/cc-tiep-dia-chong-set-tba-220kv-vinh-loc/anh-1.jpg", alt: "Tiếp địa chống sét TBA 220KV Vĩnh Lộc" },
+      { src: "/images/cc-tiep-dia-chong-set-tba-220kv-vinh-loc/anh-9.jpg", alt: "Tiếp địa chống sét TBA 220KV Vĩnh Lộc" },
       { src: "/images/cc-tiep-dia-chong-set-tba-220kv-vinh-loc/anh-2.jpg" },
       { src: "/images/cc-tiep-dia-chong-set-tba-220kv-vinh-loc/anh-3.jpg" },
       { src: "/images/cc-tiep-dia-chong-set-tba-220kv-vinh-loc/anh-4.jpg" },
@@ -66,7 +66,7 @@ export const projects: Project[] = [
       { src: "/images/cc-tiep-dia-chong-set-tba-220kv-vinh-loc/anh-6.jpg" },
       { src: "/images/cc-tiep-dia-chong-set-tba-220kv-vinh-loc/anh-7.jpg" },
       { src: "/images/cc-tiep-dia-chong-set-tba-220kv-vinh-loc/anh-8.jpg" },
-      { src: "/images/cc-tiep-dia-chong-set-tba-220kv-vinh-loc/anh-9.jpg" },
+      { src: "/images/cc-tiep-dia-chong-set-tba-220kv-vinh-loc/anh-1.jpg" },
       { src: "/images/cc-tiep-dia-chong-set-tba-220kv-vinh-loc/anh-10.jpg" },
       { src: "/images/cc-tiep-dia-chong-set-tba-220kv-vinh-loc/anh-11.jpg" },
       { src: "/images/cc-tiep-dia-chong-set-tba-220kv-vinh-loc/anh-12.jpg" },
