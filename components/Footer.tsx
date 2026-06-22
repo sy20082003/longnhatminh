@@ -105,7 +105,7 @@ export default function Footer() {
             © {new Date().getFullYear()} Long Nhật Minh. Bản quyền thuộc về
             Công ty TNHH Kỹ thuật Long Nhật Minh.
           </p>
-          <p>Thiết kế giao diện theo phong cách hiện đại.</p>
+          <p>LONG NHẬT MINH cam kết Uy tín - Giá cả - Tiến độ - Chất lượng trên từng dự án⚡</p>
         </div>
       </div>
     </footer>
