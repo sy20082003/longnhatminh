@@ -16,7 +16,7 @@ export default function AboutPreview() {
         <div className="relative">
           <div className="overflow-hidden rounded-3xl shadow-soft">
             <Image
-              src="/images/logo3.png"
+              src="/images/logo3d.png"
               alt="Long Nhật Minh - Thi công điện công nghiệp"
               width={560}
               height={420}
