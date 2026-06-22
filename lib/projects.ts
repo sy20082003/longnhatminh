@@ -17,7 +17,7 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    id: "thay-van-phong-no-mba-110kv-phan-thiet",
+    id: "tvpn-mba-110kv-phan-thiet",
     title: "Thay van phòng nổ MBA 110KV Phan Thiết",
     category: "Trạm biến áp",
     location: "Phan Thiết, Bình Thuận",
@@ -32,14 +32,14 @@ export const projects: Project[] = [
       "Kiểm tra, thử nghiệm sau lắp đặt, bàn giao và nghiệm thu với đơn vị quản lý vận hành",
     ],
     images: [
-      { src: "/images/thay-van-phong-no-mba-110kv-phan-thiet/anh-8.jpg", alt: "Thay van phòng nổ MBA 110KV Phan Thiết" },
-      { src: "/images/thay-van-phong-no-mba-110kv-phan-thiet/anh-2.jpg" },
-      { src: "/images/thay-van-phong-no-mba-110kv-phan-thiet/anh-3.jpg" },
-      { src: "/images/thay-van-phong-no-mba-110kv-phan-thiet/anh-4.jpg" },
-      { src: "/images/thay-van-phong-no-mba-110kv-phan-thiet/anh-5.jpg" },
-      { src: "/images/thay-van-phong-no-mba-110kv-phan-thiet/anh-6.jpg" },
-      { src: "/images/thay-van-phong-no-mba-110kv-phan-thiet/anh-7.jpg" },
-      { src: "/images/thay-van-phong-no-mba-110kv-phan-thiet/anh-1.jpg" },
+      { src: "/images/tvpn-mba-110kv-phan-thiet/anh-8.jpg", alt: "Thay van phòng nổ MBA 110KV Phan Thiết" },
+      { src: "/images/tvpn-mba-110kv-phan-thiet/anh-2.jpg" },
+      { src: "/images/tvpn-mba-110kv-phan-thiet/anh-3.jpg" },
+      { src: "/images/tvpn-mba-110kv-phan-thiet/anh-4.jpg" },
+      { src: "/images/tvpn-mba-110kv-phan-thiet/anh-5.jpg" },
+      { src: "/images/tvpn-mba-110kv-phan-thiet/anh-6.jpg" },
+      { src: "/images/tvpn-mba-110kv-phan-thiet/anh-7.jpg" },
+      { src: "/images/tvpn-mba-110kv-phan-thiet/anh-1.jpg" },
     ],
   },
   {
