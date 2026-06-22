@@ -1,0 +1,121 @@
+import { CheckCircle2, Award, Users, Wrench } from "lucide-react";
+import PageHero from "@/components/PageHero";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
+
+const stats = [
+  { icon: Award, value: "10+", label: "Năm kinh nghiệm" },
+  { icon: Wrench, value: "150+", label: "Công trình đã thực hiện" },
+  { icon: Users, value: "30+", label: "Kỹ sư & công nhân lành nghề" },
+];
+
+const commitments = [
+  "Vật tư, thiết bị có nguồn gốc xuất xứ rõ ràng, đầy đủ giấy chứng nhận CO, CQ",
+  "Thi công đúng bản vẽ kỹ thuật, giám sát chặt chẽ trong suốt quá trình",
+  "Tuân thủ quy định, được sự phê duyệt của ngành Điện lực trước khi đấu nối",
+  "Đội ngũ kỹ sư, công nhân có nhiều năm kinh nghiệm thực tiễn tại các công trình lớn nhỏ",
+];
+
+export default function GioiThieuPage() {
+  return (
+    <>
+      <PageHero
+        eyebrow="Về chúng tôi"
+        title="Long Nhật Minh"
+        desc="Đối tác đáng tin cậy trong lĩnh vực thiết kế, thi công trạm biến áp và điện nhà xưởng trên toàn quốc."
+      />
+
+      <section className="section-py bg-white">
+        <div className="container-px mx-auto max-w-7xl">
+          <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
+            <div>
+              <span className="eyebrow">Câu chuyện của chúng tôi</span>
+              <h2 className="section-title">
+                Hơn một thập kỷ đồng hành cùng các công trình điện
+              </h2>
+              <p className="mt-5 leading-relaxed text-navy-500">
+                Công ty TNHH Kỹ thuật Long Nhật Minh là đơn
+                vị chuyên về lĩnh vực thiết kế, thi công đường dây và trạm
+                biến áp công suất đến 35KV, cùng với hệ thống điện nhà xưởng,
+                khu công nghiệp. Với đội ngũ cán bộ kỹ sư và công nhân giàu
+                kinh nghiệm thực tiễn, chúng tôi tự hào đã đồng hành cùng
+                nhiều nhà đầu tư trong và ngoài nước qua hàng loạt dự án trên
+                khắp cả nước.
+              </p>
+              <p className="mt-4 leading-relaxed text-navy-500">
+                Một số dự án tiêu biểu mà Long Nhật Minh đã triển khai lắp
+                đặt hệ thống trạm biến áp bao gồm các doanh nghiệp sản xuất
+                trong lĩnh vực thức ăn chăn nuôi, phân bón, chế biến gỗ và
+                nhiều ngành công nghiệp khác trên cả nước.
+              </p>
+
+              <Link href="/lien-he" className="btn-primary mt-8">
+                Liên hệ với chúng tôi
+                <ArrowRight size={18} />
+              </Link>
+            </div>
+
+            <div className="grid grid-cols-1 gap-5 sm:grid-cols-3 lg:grid-cols-1">
+              {stats.map((s) => (
+                <div
+                  key={s.label}
+                  className="flex items-center gap-5 rounded-2xl border border-navy-100 bg-soft-gradient p-6"
+                >
+                  <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-navy-900 text-gold-400">
+                    <s.icon size={26} />
+                  </span>
+                  <div>
+                    <p className="text-2xl font-extrabold text-navy-900">{s.value}</p>
+                    <p className="text-sm text-navy-500">{s.label}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section-py bg-soft-gradient">
+        <div className="container-px mx-auto max-w-7xl">
+          <div className="mx-auto max-w-2xl text-center">
+            <span className="eyebrow">Cam kết chất lượng</span>
+            <h2 className="section-title">Tiêu chuẩn chúng tôi luôn tuân thủ</h2>
+          </div>
+
+          <div className="mt-12 grid gap-5 sm:grid-cols-2">
+            {commitments.map((c) => (
+              <div
+                key={c}
+                className="flex items-start gap-4 rounded-2xl bg-white p-6 shadow-card"
+              >
+                <CheckCircle2 size={24} className="mt-0.5 shrink-0 text-navy-600" />
+                <p className="text-sm leading-relaxed text-navy-700">{c}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section-py bg-white">
+        <div className="container-px mx-auto max-w-7xl">
+          <div className="mx-auto max-w-2xl text-center">
+            <span className="eyebrow">Khách hàng tiêu biểu</span>
+            <h2 className="section-title">Một số doanh nghiệp đã hợp tác</h2>
+          </div>
+          <div className="mt-10 grid grid-cols-2 gap-5 sm:grid-cols-3 lg:grid-cols-5">
+            {["Cám Thành Lợi", "Phân Bón Sông Gianh", "Gỗ Hiệp Phát", "Tỷ Minh", "Daizin"].map(
+              (p) => (
+                <div
+                  key={p}
+                  className="flex h-24 items-center justify-center rounded-2xl border border-navy-100 bg-soft-gradient px-3 text-center text-sm font-bold text-navy-600"
+                >
+                  {p}
+                </div>
+              )
+            )}
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}
