@@ -1,5 +1,5 @@
 import { Eye } from "lucide-react";
-import ProjectIllustration from "./ProjectIllustration";
+import Image from "next/image";
 import type { Project } from "@/lib/projects";
 
 export default function GalleryCard({
@@ -17,10 +17,11 @@ export default function GalleryCard({
       className="group overflow-hidden rounded-2xl border border-navy-100 bg-white text-left shadow-card transition-all hover:-translate-y-1 hover:shadow-soft"
     >
       <div className="relative aspect-[4/3] overflow-hidden">
-        <ProjectIllustration
-          variant={cover.variant}
-          paletteIndex={cover.paletteIndex}
-          className="h-full w-full transition-transform duration-500 group-hover:scale-105"
+        <Image
+          src={cover.src}
+          alt={cover.alt ?? project.title}
+          fill
+          className="object-cover transition-transform duration-500 group-hover:scale-105"
         />
         <div className="absolute inset-0 flex items-center justify-center bg-navy-950/0 opacity-0 transition-all duration-300 group-hover:bg-navy-950/40 group-hover:opacity-100">
           <span className="flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-semibold text-navy-900 shadow-md">
