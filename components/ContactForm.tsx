@@ -1,17 +1,44 @@
 "use client";
 
 import { useState } from "react";
-import { Send, CheckCircle2 } from "lucide-react";
+import { Send, CheckCircle2, Loader2 } from "lucide-react";
+
+type Status = "idle" | "loading" | "success" | "error";
 
 export default function ContactForm() {
-  const [submitted, setSubmitted] = useState(false);
+  const [status, setStatus] = useState<Status>("idle");
+  const [errorMsg, setErrorMsg] = useState("");
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    setSubmitted(true);
+    setStatus("loading");
+    setErrorMsg("");
+
+    const form = e.currentTarget;
+    const data = {
+      name:    (form.elements.namedItem("name")    as HTMLInputElement).value,
+      phone:   (form.elements.namedItem("phone")   as HTMLInputElement).value,
+      email:   (form.elements.namedItem("email")   as HTMLInputElement).value,
+      service: (form.elements.namedItem("service") as HTMLSelectElement).value,
+      message: (form.elements.namedItem("message") as HTMLTextAreaElement).value,
+    };
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+
+      if (!res.ok) throw new Error("server_error");
+      setStatus("success");
+    } catch {
+      setStatus("error");
+      setErrorMsg("Gửi thất bại, vui lòng thử lại hoặc gọi trực tiếp 0938 978 138.");
+    }
   }
 
-  if (submitted) {
+  if (status === "success") {
     return (
       <div className="flex flex-col items-center justify-center rounded-2xl bg-navy-50 p-10 text-center">
         <span className="flex h-14 w-14 items-center justify-center rounded-full bg-gold-gradient text-navy-900">
@@ -36,6 +63,7 @@ export default function ContactForm() {
           </label>
           <input
             required
+            name="name"
             type="text"
             placeholder="Nguyễn Văn A"
             className="w-full rounded-xl border border-navy-200 px-4 py-3 text-sm outline-none transition-colors focus:border-navy-500"
@@ -47,6 +75,7 @@ export default function ContactForm() {
           </label>
           <input
             required
+            name="phone"
             type="tel"
             placeholder="09xx xxx xxx"
             className="w-full rounded-xl border border-navy-200 px-4 py-3 text-sm outline-none transition-colors focus:border-navy-500"
@@ -59,6 +88,7 @@ export default function ContactForm() {
           Email
         </label>
         <input
+          name="email"
           type="email"
           placeholder="email@example.com"
           className="w-full rounded-xl border border-navy-200 px-4 py-3 text-sm outline-none transition-colors focus:border-navy-500"
@@ -69,9 +99,13 @@ export default function ContactForm() {
         <label className="mb-1.5 block text-sm font-semibold text-navy-800">
           Dịch vụ quan tâm
         </label>
-        <select className="w-full rounded-xl border border-navy-200 px-4 py-3 text-sm outline-none transition-colors focus:border-navy-500">
+        <select
+          name="service"
+          className="w-full rounded-xl border border-navy-200 px-4 py-3 text-sm outline-none transition-colors focus:border-navy-500"
+        >
           <option>Thiết kế & Thi công Trạm biến áp</option>
           <option>Thiết kế & Thi công Điện nhà xưởng</option>
+          <option>Thi công Điện mặt trời áp mái</option>
           <option>Khác</option>
         </select>
       </div>
@@ -81,15 +115,35 @@ export default function ContactForm() {
           Nội dung yêu cầu
         </label>
         <textarea
+          name="message"
           rows={4}
           placeholder="Mô tả ngắn gọn về công trình, quy mô, vị trí..."
           className="w-full resize-none rounded-xl border border-navy-200 px-4 py-3 text-sm outline-none transition-colors focus:border-navy-500"
         />
       </div>
 
-      <button type="submit" className="btn-primary w-full sm:w-auto">
-        Gửi yêu cầu tư vấn
-        <Send size={16} />
+      {status === "error" && (
+        <p className="rounded-xl bg-red-50 px-4 py-3 text-sm text-red-600">
+          {errorMsg}
+        </p>
+      )}
+
+      <button
+        type="submit"
+        disabled={status === "loading"}
+        className="btn-primary w-full sm:w-auto disabled:opacity-60"
+      >
+        {status === "loading" ? (
+          <>
+            <Loader2 size={16} className="animate-spin" />
+            Đang gửi...
+          </>
+        ) : (
+          <>
+            Gửi yêu cầu tư vấn
+            <Send size={16} />
+          </>
+        )}
       </button>
     </form>
   );

@@ -96,4 +96,29 @@ export const projects: Project[] = [
       { src: "/images/mat-troi-tram-bien-ap-110kv/anh-1.jpg" },
     ],
   },
+  {
+  id: "goi-sua-chua-110kv-tba-110kv-binh-thuan",
+  title: "Cung cấp toàn bộ vật tư gói sửa chữa lớn đường dây 110kV và Trạm biến áp 110kV Bình Thuận",
+  category: "Trạm biến áp",
+  location: "Bình Thuận",
+  capacity: "110 kV", // Cấp điện áp của đường dây và trạm biến áp
+  year: "2024",
+  summary:
+    "Cung cấp đồng bộ và đầy đủ toàn bộ vật tư, thiết bị phục vụ cho gói thầu sửa chữa lớn hệ thống đường dây tải điện 110kV và Trạm biến áp 110kV tại tỉnh Bình Thuận, đảm bảo vận hành an toàn, liên tục.",
+  details: [
+    "Khảo sát hiện trạng, lập danh mục và khối lượng vật tư thiết bị cần thay thế, sửa chữa",
+    "Cung cấp vật tư đường dây 110kV: dây dẫn, cách điện, phụ kiện định vị, chống sét van...",
+    "Cung cấp thiết bị trạm biến áp 110kV: máy biến áp, máy cắt, dao cách ly, hệ thống tủ điều khiển bảo vệ",
+    "Vận chuyển toàn bộ vật tư đến công trường, phối hợp kiểm tra chất lượng, nghiệm thu và bàn giao đưa vào sử dụng",
+  ],
+  images: [
+    { src: "/images/goi-sua-chua-100kv-tba-110kv-binh-thuan/anh-1.jpg", alt: "Vật tư thiết bị sửa chữa lớn trạm biến áp 110kV Bình Thuận" },
+    { src: "/images/goi-sua-chua-100kv-tba-110kv-binh-thuan/anh-2.jpg", alt: "Cung cấp vật tư cách điện và phụ kiện đường dây 110kV" },
+    { src: "/images/goi-sua-chua-100kv-tba-110kv-binh-thuan/anh-3.jpg", alt: "Thiết bị đóng cắt và bảo vệ cho trạm biến áp 110kV" },
+    { src: "/images/goi-sua-chua-100kv-tba-110kv-binh-thuan/anh-4.jpg", alt: "Quá trình vận chuyển và tập kết vật tư tại công trình Bình Thuận" },
+    { src: "/images/goi-sua-chua-100kv-tba-110kv-binh-thuan/anh-5.jpg", alt: "Kiểm tra kỹ thuật vật tư thiết bị điện trước khi lắp đặt" },
+    { src: "/images/goi-sua-chua-100kv-tba-110kv-binh-thuan/anh-6.jpg", alt: "Hệ thống đường dây 110kV sau khi được thay thế vật tư mới" },
+    { src: "/images/goi-sua-chua-100kv-tba-110kv-binh-thuan/anh-7.jpg", alt: "Toàn cảnh trạm biến áp 110kV Bình Thuận hoàn thành sửa chữa lớn" },
+  ],
+},
 ];
