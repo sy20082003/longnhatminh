@@ -18,13 +18,13 @@ export type Project = {
 export const projects: Project[] = [
   {
     id: "cc-thep-ma-kem-bulong-tbt-ba-queo",
-    title: "Cung cấp thép mạ kẽm bulong TBT Ba Quẹo",
+    title: "Cung cấp thép mạ kẽm bulong, trạm biến áp Bà Quẹo",
     category: "Trạm biến áp",
     location: "Ba Quẹo, TP. Hồ Chí Minh",
     capacity: "—",
     year: "2024",
     summary:
-      "Cung cấp và lắp đặt hệ thống thép mạ kẽm, bulong cho trạm biến áp trung thế Ba Quẹo, đảm bảo độ bền và chống ăn mòn lâu dài.",
+      "Cung cấp và lắp đặt hệ thống thép mạ kẽm, bulong cho trạm biến áp trung thế Bà Quẹo, đảm bảo độ bền và chống ăn mòn lâu dài.",
     details: [
       "Tư vấn lựa chọn chủng loại thép mạ kẽm và bulong phù hợp tiêu chuẩn kỹ thuật trạm biến áp",
       "Cung cấp vật tư đúng quy cách, đạt tiêu chuẩn chống ăn mòn trong môi trường ngoài trời",
@@ -144,6 +144,31 @@ export const projects: Project[] = [
     { src: "/images/tba-110kv-vinh-loc/anh-5.jpg", alt: "Nghiệm thu lắp đặt vật tư thiết bị hạng mục phụ trợ" },
     { src: "/images/tba-110kv-vinh-loc/anh-6.jpg", alt: "Cung cấp vật tư hàng hóa cải tạo trạm biến áp Vĩnh Lộc" },
     { src: "/images/tba-110kv-vinh-loc/anh-7.jpg", alt: "Toàn cảnh công trình cải tạo hệ thống phụ trợ TBA 110kV Vĩnh Lộc hoàn thiện" },
+  ],
+},
+{
+  id: "cc-van-xa-loc-dau-thay-bo-mba-phan-thiet",
+  title: "Cung cấp van xả áp, lọc dầu máy biến áp, thay bo điều khiển máy biến áp, trạm biến áp 110kV Phan Thiết",
+  category: "Trạm biến áp",
+  location: "Bình Thuận", // Phan Thiết thuộc tỉnh Bình Thuận
+  capacity: "110 kV",
+  year: "2025",
+  summary:
+    "Cung cấp vật tư thiết bị chính hãng và thực hiện dịch vụ thay thế hệ thống van xả áp, lọc dầu máy biến áp cùng bo mạch điều khiển cho máy biến áp lực tại Trạm Biến Áp 110kV Phan Thiết.",
+  details: [
+    "Cung cấp và thay thế van xả áp lực lớn, đảm bảo an toàn cho vỏ và kết cấu máy biến áp khi có sự cố",
+    "Thực hiện lọc dầu tuần hoàn, khử ẩm và cung cấp lõi lọc dầu chính hãng cho máy biến áp 110kV",
+    "Khảo sát, tháo dỡ bo mạch cũ và lắp đặt bo điều khiển máy biến áp thế hệ mới",
+    "Cấu hình, kiểm tra các chức năng bảo vệ, đo lường và nghiệm thu bàn giao hệ thống vận hành ổn định",
+  ],
+  images: [
+    { src: "/images/cc-van-xa-loc-dau-thay-bo-mba/anh-1.jpg", alt: "Cung cấp vật tư van xả áp và lọc dầu máy biến áp 110kV Phan Thiết" },
+    { src: "/images/cc-van-xa-loc-dau-thay-bo-mba/anh-2.jpg", alt: "Quá trình thay thế van xả áp an toàn cho máy biến áp" },
+    { src: "/images/cc-van-xa-loc-dau-thay-bo-mba/anh-3.jpg", alt: "Hệ thống thiết bị lọc dầu máy biến áp lực đang vận hành" },
+    { src: "/images/cc-van-xa-loc-dau-thay-bo-mba/anh-4.jpg", alt: "Lắp đặt và đấu nối bo điều khiển mới cho máy biến áp" },
+    { src: "/images/cc-van-xa-loc-dau-thay-bo-mba/anh-5.jpg", alt: "Kiểm tra thông số kỹ thuật bo mạch điều khiển máy biến áp 110kV" },
+    { src: "/images/cc-van-xa-loc-dau-thay-bo-mba/anh-6.jpg", alt: "Vật tư lọc dầu máy biến áp chính hãng được cung cấp tại trạm" },
+    { src: "/images/cc-van-xa-loc-dau-thay-bo-mba/anh-7.jpg", alt: "Hoàn thành công tác bảo dưỡng và nghiệm thu máy biến áp TBA 110kV Phan Thiết" },
   ],
 },
 ];
