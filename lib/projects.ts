@@ -121,4 +121,29 @@ export const projects: Project[] = [
     { src: "/images/goi-sua-chua-100kv-tba-110kv-binh-thuan/anh-7.jpg", alt: "Toàn cảnh trạm biến áp 110kV Bình Thuận hoàn thành sửa chữa lớn" },
   ],
 },
+{
+  id: "cai-tao-tba-110kv-vinh-loc",
+  title: "Thực hiện cung cấp hàng hóa và dịch vụ lắp đặt Hệ thống tiếp địa, chiếu sáng, điều hòa và thông gió của công trình Cải tạo Trạm Biến Áp 110kV Vĩnh Lộc",
+  category: "Trạm biến áp",
+  location: "TP. Hồ Chí Minh", // Trạm Vĩnh Lộc thuộc khu vực TP.HCM
+  capacity: "110 kV",
+  year: "2026",
+  summary:
+    "Cung cấp đồng bộ thiết bị và triển khai thi công lắp đặt trọn gói hệ thống tiếp địa an toàn, hệ thống chiếu sáng sản xuất, cùng hệ thống điều hòa không khí và thông gió (HVAC) cho công trình Cải tạo Trạm Biến Áp 110kV Vĩnh Lộc.",
+  details: [
+    "Thi công đào rãnh, đóng cọc và hàn hóa nhiệt hệ thống tiếp địa an toàn cho trạm biến áp",
+    "Lắp đặt hệ thống chiếu sáng nội bộ, chiếu sáng bảo vệ ngoài trời và trong nhà trạm",
+    "Cung cấp và lắp đặt hệ thống điều hòa không khí, kiểm soát nhiệt độ độ ẩm cho phòng thiết bị điều khiển",
+    "Triển khai hệ thống thông gió, đảm bảo lưu thông không khí và làm mát tự nhiên cho các phòng chức năng",
+  ],
+  images: [
+    { src: "/images/tba-110kv-vinh-loc/anh-1.jpg", alt: "Thi công lắp đặt hệ thống tiếp địa Trạm biến áp 110kV Vĩnh Lộc" },
+    { src: "/images/tba-110kv-vinh-loc/anh-2.jpg", alt: "Hệ thống chiếu sáng bảo vệ và chiếu sáng vận hành tại trạm" },
+    { src: "/images/tba-110kv-vinh-loc/anh-3.jpg", alt: "Lắp đặt điều hòa không khí cho phòng tủ bảng điều khiển bảo vệ" },
+    { src: "/images/tba-110kv-vinh-loc/anh-4.jpg", alt: "Hệ thống thông gió làm mát nhà trạm biến áp 110kV" },
+    { src: "/images/tba-110kv-vinh-loc/anh-5.jpg", alt: "Nghiệm thu lắp đặt vật tư thiết bị hạng mục phụ trợ" },
+    { src: "/images/tba-110kv-vinh-loc/anh-6.jpg", alt: "Cung cấp vật tư hàng hóa cải tạo trạm biến áp Vĩnh Lộc" },
+    { src: "/images/tba-110kv-vinh-loc/anh-7.jpg", alt: "Toàn cảnh công trình cải tạo hệ thống phụ trợ TBA 110kV Vĩnh Lộc hoàn thiện" },
+  ],
+},
 ];
