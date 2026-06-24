@@ -13,7 +13,7 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Điện thoại",
-    lines: ["0901 835 103 (Mr. Long)", "Hotline: 0972 346 525"],
+    lines: ["0901 835 103 (Mr. Long)", "Hotline: 0938 978 138"],
   },
   {
     icon: Mail,
