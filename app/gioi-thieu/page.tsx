@@ -34,22 +34,17 @@ export default function GioiThieuPage() {
                 Hơn một thập kỷ đồng hành cùng các công trình điện
               </h2>
               <p className="mt-5 leading-relaxed text-navy-500">
-                Công ty TNHH Kỹ Thuật Long Nhật Minh là đơn vị chuyên cung cấp vật tư,
-                thiết bị điện phục vụ thi công xây lắp điện công trình.
-                Nhằm đáp ứng nhu cầu phát triển của ngành điện và quá trình công nghiệp hóa,
-                hiện đại hóa đất nước, công ty không ngừng mở rộng sản xuất và phân phối vật tư,
+                CCông ty TNHH Kỹ Thuật Long Nhật Minh là đơn vị chuyên cung cấp vật tư, 
+                thiết bị điện phục vụ thi công xây lắp điện công trình. Công ty sản xuất và phân phối vật tư, 
                 phụ kiện lưới điện, kết cấu thép cho đường dây và trạm điện đến 110kV, 
-                đồng thời cung cấp và lắp đặt hệ thống điện mặt trời. 
-                Với nhiều năm hoạt động, Long Nhật Minh đã cung cấp các sản phẩm và giải pháp chất lượng 
-                cho các công ty xây lắp điện, đơn vị thiết bị điện và các điện lực trên cả nước.
+                đồng thời cung cấp và lắp đặt hệ thống điện mặt trời. Với nhiều năm hoạt động, 
+                Long Nhật Minh đã cung cấp các sản phẩm chất lượng cho nhiều công ty xây lắp điện, 
+                đơn vị thiết bị điện và các điện lực trên toàn quốc.
               </p>
               <p className="mt-4 leading-relaxed text-navy-500">
                 Với phương châm “Uy tín – Tiến độ – Giá cả hợp lý”, Công ty TNHH Kỹ Thuật Long Nhật Minh 
-                luôn nỗ lực mang đến cho khách hàng những sản phẩm và dịch vụ chất lượng cao. 
-                Chúng tôi cam kết không ngừng nâng cao năng lực, xây dựng niềm tin và khẳng định uy tín thương hiệu 
-                trên thị trường. Đồng thời, Long Nhật Minh luôn mong muốn mở rộng hợp tác, 
-                lắng nghe các ý kiến đóng góp quý báu để ngày càng hoàn thiện hơn, 
-                hướng tới mối quan hệ hợp tác bền vững và lâu dài cùng Quý khách hàng.
+                luôn cam kết mang đến sản phẩm và dịch vụ chất lượng, đáp ứng tốt nhu cầu của khách hàng. 
+                Chúng tôi mong muốn được đồng hành, hợp tác lâu dài và xây dựng niềm tin bền vững cùng Quý khách hàng.
               </p>
 
               <Link href="/lien-he" className="btn-primary mt-8">
