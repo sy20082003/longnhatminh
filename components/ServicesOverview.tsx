@@ -1,14 +1,18 @@
 import Link from "next/link";
-import { ArrowUpRight, Gauge, Factory, Sun, Cog } from "lucide-react";
+import { ArrowUpRight, Gauge, Factory, Sun, Cog, Building2, Ship } from "lucide-react";
 
 const services = [
   {
-    icon: Gauge,
-    title: "Thiết kế & Thi công Trạm biến áp",
-    desc: "Khảo sát, thiết kế và thi công trạm biến áp công suất đến 35KV cho nhà xưởng, khu dân cư, khu công nghiệp và cao ốc, đảm bảo chuẩn kỹ thuật và an toàn vận hành.",
-    href: "/dich-vu/tram-bien-ap",
-    points: ["Khảo sát & tư vấn vị trí lắp đặt", "Thiết kế tối ưu công suất", "Thi công đúng bản vẽ kỹ thuật"],
-  },
+  icon: Building2,
+  title: "Sản xuất Kết cấu thép & Phụ kiện Lưới điện",
+  desc: "Chuyên sản xuất kết cấu thép mạ kẽm nhúng nóng, phụ kiện lưới điện và thiết bị cơ khí điện phục vụ các công trình đường dây và trạm biến áp.",
+  href: "/dich-vu/ket-cau-thep-phu-kien-luoi-dien",
+  points: [
+    "Sản xuất bulông, ốc vít, phụ kiện treo, néo và nối cho đường dây điện",
+    "Gia công kết cấu thép mạ kẽm nhúng nóng cho cột điện và trạm biến áp",
+    "Sản xuất tủ điện, thang máng cáp và phụ kiện đấu nối"
+  ],
+}
   {
   icon: Cog,
   title: "Phân phối Vật tư & Thiết bị Đường dây và Trạm điện đến 220kV",
@@ -18,11 +22,23 @@ const services = [
 },
   {
     icon: Sun,
-    title: "Thi công Điện mặt trời áp mái",
-    desc: "Tư vấn, thiết kế và thi công hệ thống điện mặt trời áp mái cho hộ gia đình, nhà xưởng và doanh nghiệp — giảm chi phí điện năng, hoàn vốn nhanh và thân thiện với môi trường.",
+    title: "Cung cấp và lắp đặt Hệ thống Điện mặt trời",
+    desc: "Tư vấn, thiết kế và thi công hệ thống điện mặt trời áp mái cho hộ gia đình, doanh nghiệp và nhà xưởng, tối ưu chi phí điện năng và nâng cao hiệu quả đầu tư.",
     href: "/dich-vu/dien-mat-troi",
-    points: ["Khảo sát mái & tính toán công suất phù hợp", "Lắp đặt tấm pin, inverter đúng tiêu chuẩn", "Hỗ trợ thủ tục đấu nối lên lưới điện quốc gia"],
+    points: ["Thiết kế và thi công hệ thống điện mặt trời áp mái", "Cung cấp tấm pin, inverter, khung giá đỡ và hệ thống giám sát", "Bảo trì, bảo hành và giám sát vận hành sau lắp đặt"],
   },
+  {
+icon: Ship,
+title: "Nhập khẩu & Phân phối Trực tiếp",
+desc: "Nhập khẩu và phân phối trực tiếp thiết bị điện, thiết bị trạm biến áp và giải pháp lưu trữ năng lượng từ các thương hiệu uy tín trong và ngoài nước, đảm bảo chất lượng và nguồn gốc rõ ràng.",
+href: "/dich-vu/nhap-khau-phan-phoi",
+points: [
+"Thiết bị trạm biến áp từ các thương hiệu uy tín như Taikai, Heng Ming...",
+"Cung cấp hệ thống ắc quy kiềm (Ni-Cd) và tủ nạp ACU cho trạm đến 110kV",
+"Đầy đủ CO, CQ, Test Report và hỗ trợ kỹ thuật trực tiếp từ nhà sản xuất"
+],
+}
+
 ];
 
 export default function ServicesOverview() {
