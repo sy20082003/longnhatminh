@@ -135,7 +135,7 @@ export default function ServicesOverview() {
                       >
                         <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-gold-500" />
                         {p}
-                      </td>
+                      </li>
                     ))}
                   </ul>
 
