@@ -21,7 +21,7 @@ const navLinks = [
       },
       { 
         href: "/dich-vu/dien-mat-troi", 
-        label: "Điện mặt trời áp mái" 
+        label: "Cung cấp & lắp đặt hệ thống điện mặt trời" 
       },
       { 
         href: "/dich-vu/nhap-khau-phan-phoi", 
