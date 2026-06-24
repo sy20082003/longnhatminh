@@ -1,7 +1,14 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowUpRight, ChevronLeft, ChevronRight, Sun, Cog, Building2, Ship } from "lucide-react";
+import {
+  ArrowUpRight,
+  Sun,
+  Cog,
+  Building2,
+  Ship,
+} from "lucide-react";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 
@@ -12,47 +19,47 @@ const services = [
   {
     icon: Building2,
     title: "Sản xuất Kết cấu thép & Phụ kiện Lưới điện",
-    desc: "Chuyên sản xuất kết cấu thép mạ kẽm nhúng nóng, phụ kiện lưới điện và thiết bị cơ khí điện phục vụ các công trình đường dây và trạm biến áp.",
+    desc: "Chuyên sản xuất kết cấu thép mạ kẽm nhúng nóng, phụ kiện lưới điện và thiết bị cơ khí điện.",
     href: "/dich-vu/ket-cau-thep-phu-kien-luoi-dien",
     points: [
-      "Sản xuất bulông, ốc vít, phụ kiện treo, néo và nối cho đường dây điện",
-      "Gia công kết cấu thép mạ kẽm nhúng nóng cho cột điện và trạm biến áp",
-      "Sản xuất tủ điện, thang máng cáp và phụ kiện đấu nối"
+      "Bulông, ốc vít, phụ kiện treo, néo và nối",
+      "Kết cấu thép mạ kẽm nhúng nóng cho cột điện",
+      "Tủ điện, thang máng cáp và phụ kiện đấu nối",
     ],
   },
   {
     icon: Cog,
-    title: "Phân phối Vật tư & Thiết bị Đường dây và Trạm điện đến 220kV",
-    desc: "Cung cấp đầy đủ vật tư, thiết bị cho các công trình đường dây và trạm điện đến 220kV.",
+    title: "Phân phối Vật tư & Thiết bị Đường dây 220kV",
+    desc: "Cung cấp vật tư, thiết bị cho đường dây và trạm biến áp đến 220kV.",
     href: "/dich-vu/vat-tu-thiet-bi-duong-day-tram-dien",
     points: [
-      "Dây dẫn, cáp điện, sứ cách điện, chống sét, thiết bị đóng cắt",
-      "Kết cấu thép và vật tư trạm biến áp",
-      "Phân phối từ thương hiệu uy tín trong và ngoài nước"
+      "Dây dẫn, cáp điện, sứ cách điện, chống sét",
+      "Thiết bị đóng cắt & máy biến áp",
+      "Phụ kiện lưới điện và trạm biến áp",
     ],
   },
   {
     icon: Sun,
-    title: "Cung cấp & Lắp đặt Điện mặt trời",
-    desc: "Giải pháp điện mặt trời áp mái cho hộ gia đình, doanh nghiệp và nhà xưởng.",
+    title: "Điện mặt trời áp mái",
+    desc: "Thi công hệ thống điện mặt trời cho nhà xưởng và doanh nghiệp.",
     href: "/dich-vu/dien-mat-troi",
     points: [
-      "Thiết kế và thi công hệ thống điện mặt trời",
-      "Cung cấp pin, inverter, khung giá đỡ",
-      "Bảo trì và giám sát vận hành"
+      "Thiết kế & thi công trọn gói",
+      "Pin năng lượng, inverter, khung giá đỡ",
+      "Bảo trì & giám sát hệ thống",
     ],
   },
   {
     icon: Ship,
-    title: "Nhập khẩu & Phân phối Trực tiếp",
-    desc: "Nhập khẩu thiết bị trạm biến áp và giải pháp năng lượng từ các thương hiệu quốc tế.",
+    title: "Nhập khẩu & Phân phối trực tiếp",
+    desc: "Nhập khẩu thiết bị điện và trạm biến áp từ các hãng quốc tế.",
     href: "/dich-vu/nhap-khau-phan-phoi",
     points: [
       "Thiết bị Taikai, Heng Ming...",
-      "Ắc quy Ni-Cd, tủ nạp ACU đến 110kV",
-      "CO, CQ, hỗ trợ kỹ thuật từ nhà sản xuất"
+      "Ắc quy Ni-Cd & tủ nạp ACU 110kV",
+      "CO, CQ và hỗ trợ kỹ thuật hãng",
     ],
-  }
+  },
 ];
 
 export default function ServicesOverview() {
@@ -60,7 +67,7 @@ export default function ServicesOverview() {
     <section className="section-py bg-white">
       <div className="container-px mx-auto max-w-7xl">
 
-        {/* Title */}
+        {/* TITLE */}
         <div className="mx-auto max-w-2xl text-center">
           <span className="eyebrow">Lĩnh vực hoạt động</span>
           <h2 className="section-title">Dịch vụ chuyên sâu của chúng tôi</h2>
@@ -69,15 +76,16 @@ export default function ServicesOverview() {
           </p>
         </div>
 
-        {/* Slider */}
+        {/* SLIDER */}
         <div className="relative mt-14">
 
-          {/* Navigation buttons */}
+          {/* NAV */}
           <button className="prev-btn absolute left-0 top-1/2 z-10 -translate-y-1/2 rounded-full bg-white p-2 shadow">
-            <ChevronLeft />
+            ❮
           </button>
+
           <button className="next-btn absolute right-0 top-1/2 z-10 -translate-y-1/2 rounded-full bg-white p-2 shadow">
-            <ChevronRight />
+            ❯
           </button>
 
           <Swiper
@@ -95,25 +103,46 @@ export default function ServicesOverview() {
             }}
           >
             {services.map((s) => (
-              <SwiperSlide key={s.title}>
+              <SwiperSlide key={s.title} className="h-auto">
                 <Link
                   href={s.href}
-                  className="group relative block h-full overflow-hidden rounded-3xl border border-navy-100 bg-soft-gradient p-8 transition hover:-translate-y-1 hover:shadow-soft"
+                  className="group flex h-full flex-col rounded-3xl border border-navy-100 bg-soft-gradient p-8 transition hover:-translate-y-1 hover:shadow-soft"
                 >
-                  <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-navy-900 text-gold-400 group-hover:bg-gold-gradient group-hover:text-navy-900">
+
+                  {/* ICON */}
+                  <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-navy-900 text-gold-400">
                     <s.icon size={26} />
                   </div>
 
+                  {/* TITLE */}
                   <h3 className="mt-6 text-xl font-bold text-navy-900">
                     {s.title}
                   </h3>
 
-                  <p className="mt-3 text-sm text-navy-500">{s.desc}</p>
+                  {/* DESC */}
+                  <p className="mt-3 text-sm text-navy-500">
+                    {s.desc}
+                  </p>
 
-                  <span className="mt-7 inline-flex items-center gap-1 text-sm font-bold text-navy-700 group-hover:text-navy-900">
+                  {/* POINTS */}
+                  <ul className="mt-6 flex-1 space-y-2">
+                    {s.points.map((p) => (
+                      <li
+                        key={p}
+                        className="flex items-start gap-2 text-sm text-navy-700"
+                      >
+                        <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-gold-500" />
+                        {p}
+                      </li>
+                    ))}
+                  </ul>
+
+                  {/* FOOTER */}
+                  <span className="mt-6 inline-flex items-center gap-1 text-sm font-bold text-navy-700">
                     Xem chi tiết
                     <ArrowUpRight size={16} />
                   </span>
+
                 </Link>
               </SwiperSlide>
             ))}
