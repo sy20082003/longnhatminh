@@ -55,12 +55,12 @@ export default function Footer() {
           </h4>
           <ul className="mt-5 space-y-3 text-sm">
             <li>
-              <Link href="/dich-vu/tram-bien-ap" className="text-base text-navy-300 hover:text-white">
+              <Link href="/dich-vu/san-xuat" className="text-base text-navy-300 hover:text-white">
                 Sản xuất Kết cấu thép & Phụ kiện Lưới điện
               </Link>
             </li>
             <li>
-              <Link href="/dich-vu/dien-nha-xuong" className="text-base text-navy-300 hover:text-white">
+              <Link href="/dich-vu/phan-phoi" className="text-base text-navy-300 hover:text-white">
                 Phân phối Vật tư & Thiết bị Đường dây 220kV
               </Link>
             </li>
@@ -69,8 +69,8 @@ export default function Footer() {
                 Cung cấp & lắp đặt hệ thống điện mặt trời
               </Link>
             </li>
-             <li>
-              <Link href="/dich-vu/dien-mat-troi" className="text-base text-navy-300 hover:text-white">
+            <li>
+              <Link href="/dich-vu/nhap-khau" className="text-base text-navy-300 hover:text-white">
                 Nhập khẩu & Phân phối trực tiếp
               </Link>
             </li>

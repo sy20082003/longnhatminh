@@ -12,11 +12,11 @@ const navLinks = [
     label: "Dịch vụ",
     children: [
       { 
-        href: "/dich-vu/ket-cau-thep-phu-kien-luoi-dien", 
+        href: "/dich-vu/san-xuat", 
         label: "Sản xuất Kết cấu thép & Phụ kiện Lưới điện" 
       },
       { 
-        href: "/dich-vu/vat-tu-thiet-bi-duong-day-tram-dien", 
+        href: "/dich-vu/phan-phoi", 
         label: "Phân phối Vật tư & Thiết bị Đường dây 220kV" 
       },
       { 
@@ -24,7 +24,7 @@ const navLinks = [
         label: "Cung cấp & lắp đặt hệ thống điện mặt trời" 
       },
       { 
-        href: "/dich-vu/nhap-khau-phan-phoi", 
+        href: "/dich-vu/nhap-khau", 
         label: "Nhập khẩu & Phân phối trực tiếp" 
       },
     ],

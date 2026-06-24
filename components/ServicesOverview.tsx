@@ -22,7 +22,7 @@ const services = [
     icon: Building2,
     title: "Sản xuất Kết cấu thép & Phụ kiện Lưới điện",
     desc: "Chuyên sản xuất kết cấu thép mạ kẽm nhúng nóng, phụ kiện lưới điện và thiết bị cơ khí điện.",
-    href: "/dich-vu/ket-cau-thep-phu-kien-luoi-dien",
+    href: "/dich-vu/san-xuat",
     points: [
       "Bulông, ốc vít, phụ kiện treo, néo và nối",
       "Kết cấu thép mạ kẽm nhúng nóng cho cột điện",
@@ -33,7 +33,7 @@ const services = [
     icon: Cog,
     title: "Phân phối Vật tư & Thiết bị Đường dây 220kV",
     desc: "Cung cấp vật tư, thiết bị cho đường dây và trạm biến áp đến 220kV.",
-    href: "/dich-vu/vat-tu-thiet-bi-duong-day-tram-dien",
+    href: "/dich-vu/phan-phoi",
     points: [
       "Dây dẫn, cáp điện, sứ cách điện, chống sét",
       "Thiết bị đóng cắt & máy biến áp",
@@ -55,7 +55,7 @@ const services = [
     icon: Ship,
     title: "Nhập khẩu & Phân phối trực tiếp",
     desc: "Nhập khẩu thiết bị điện và trạm biến áp từ các hãng quốc tế.",
-    href: "/dich-vu/nhap-khau-phan-phoi",
+    href: "/dich-vu/nhap-khau",
     points: [
       "Thiết bị Taikai, Heng Ming...",
       "Ắc quy Ni-Cd & tủ nạp ACU 110kV",
