@@ -37,9 +37,8 @@ export default function AboutPreview() {
           <p className="mt-5 text-navy-500 leading-relaxed">
             Trải qua nhiều năm hoạt động, chúng tôi tích lũy kinh nghiệm thực
             tiễn từ nhiều công trình lớn nhỏ trên cả nước, trở thành đối tác
-            đáng tin cậy của các nhà đầu tư trong và ngoài nước trong lĩnh vực
-            thiết kế, thi công đường dây và trạm biến áp đến 35KV cùng hệ
-            thống điện nhà xưởng.
+            đáng tin cậy của các nhà đầu tư trong và ngoài nước trong lĩnh vực cung cấp vật tư, thiết bị điện,
+            thiết kế, thi công đường dây và trạm biến áp lên đến 220kV cùng hệ điện mặt trời áp mái.
           </p>
 
           <ul className="mt-7 space-y-3">
