@@ -7,6 +7,8 @@ import {
   Cog,
   Building2,
   Ship,
+  ChevronLeft,  // Thêm icon mũi tên trái
+  ChevronRight, // Thêm icon mũi tên phải
 } from "lucide-react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -77,15 +79,15 @@ export default function ServicesOverview() {
         </div>
 
         {/* SLIDER */}
-        <div className="relative mt-14">
+        <div className="relative mt-14 px-4 md:px-8"> {/* Thêm padding hai bên để nút không đè lên content quá nhiều */}
 
-          {/* NAV */}
-          <button className="prev-btn absolute left-0 top-1/2 z-10 -translate-y-1/2 rounded-full bg-white p-2 shadow">
-            ❮
+          {/* NAV BUTTONS */}
+          <button className="prev-btn absolute -left-2 top-1/2 z-10 -translate-y-1/2 rounded-full border border-navy-100 bg-white p-3 text-navy-900 shadow-lg transition hover:bg-navy-900 hover:text-white active:scale-95 disabled:opacity-40 md:-left-4">
+            <ChevronLeft size={24} />
           </button>
 
-          <button className="next-btn absolute right-0 top-1/2 z-10 -translate-y-1/2 rounded-full bg-white p-2 shadow">
-            ❯
+          <button className="next-btn absolute -right-2 top-1/2 z-10 -translate-y-1/2 rounded-full border border-navy-100 bg-white p-3 text-navy-900 shadow-lg transition hover:bg-navy-900 hover:text-white active:scale-95 disabled:opacity-40 md:-right-4">
+            <ChevronRight size={24} />
           </button>
 
           <Swiper
@@ -133,7 +135,7 @@ export default function ServicesOverview() {
                       >
                         <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-gold-500" />
                         {p}
-                      </li>
+                      </td>
                     ))}
                   </ul>
 
