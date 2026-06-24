@@ -9,7 +9,7 @@ export default function Footer() {
         <div>
           <Logo variant="light" />
           <p className="mt-5 text-sm leading-relaxed text-navy-300">
-            Đơn vị thiết kế, thi công trạm biến áp và hệ thống điện nhà xưởng,
+            Đơn vị cung cấp và phân phối,thiết kế, thi công trạm biến áp và hệ thống điện mặt trời,
             khu công nghiệp với đội ngũ kỹ sư nhiều năm kinh nghiệm thực tiễn,
             cam kết an toàn và đúng tiến độ.
           </p>
