@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowUpRight, Gauge, Factory, Sun } from "lucide-react";
+import { ArrowUpRight, Gauge, Factory, Sun, Cog } from "lucide-react";
 
 const services = [
   {
@@ -10,12 +10,12 @@ const services = [
     points: ["Khảo sát & tư vấn vị trí lắp đặt", "Thiết kế tối ưu công suất", "Thi công đúng bản vẽ kỹ thuật"],
   },
   {
-    icon: Factory,
-    title: "Thiết kế & Thi công Điện nhà xưởng",
-    desc: "Cung cấp trọn gói dịch vụ thiết kế và thi công hệ thống điện nhà xưởng, giúp máy móc thiết bị vận hành ổn định, nâng cao năng suất sản xuất.",
-    href: "/dich-vu/dien-nha-xuong",
-    points: ["Tính toán tải điện chính xác", "Thi công an toàn, gọn gàng", "Bảo trì & hỗ trợ sau lắp đặt"],
-  },
+  icon: Cog,
+  title: "Phân phối Vật tư & Thiết bị Đường dây và Trạm điện đến 220kV",
+  desc: "Cung cấp đầy đủ vật tư, thiết bị cho các công trình đường dây và trạm điện đến 220kV, đáp ứng tiêu chuẩn kỹ thuật, chất lượng và tiến độ dự án.",
+  href: "/dich-vu/vat-tu-thiet-bi-duong-day-tram-dien",
+  points: ["Dây dẫn, cáp điện, sứ cách điện, chống sét, thiết bị đóng cắt, máy biến áp", "Kết cấu thép, phụ kiện lưới điện và vật tư thi công trạm biến áp", "Đối tác phân phối của các thương hiệu uy tín trong và ngoài nước"],
+},
   {
     icon: Sun,
     title: "Thi công Điện mặt trời áp mái",
