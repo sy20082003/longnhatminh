@@ -30,7 +30,7 @@ export default function Hero() {
             <span className="bg-gold-gradient bg-clip-text text-transparent">
               trạm biến áp
             </span>{" "}
-            &amp; điện công nghiệp an toàn, bền vững
+            &amp; hệ thống điện mặt trời an toàn, bền vững
           </h1>
           <p className="mt-6 max-w-xl text-base leading-relaxed text-navy-100 sm:text-lg">
             <strong>CTY TNHH KỸ THUẬT LONG NHẬT MINH</strong> đồng hành cùng nhà xưởng, khu công nghiệp và khu

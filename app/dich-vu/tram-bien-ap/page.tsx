@@ -79,7 +79,7 @@ export default function TramBienApPage() {
       <PageHero
         eyebrow="Dịch vụ"
         title="Thiết kế & Thi công Trạm biến áp"
-        desc="Giải pháp trạm biến áp công suất đến 35KV cho nhà xưởng, khu dân cư, khu công nghiệp và cao ốc, đảm bảo độ chính xác và yêu cầu kỹ thuật cao."
+        desc="Giải pháp trạm biến áp công suất lên đến 220kV cho nhà xưởng, khu dân cư, khu công nghiệp và cao ốc, đảm bảo độ chính xác và yêu cầu kỹ thuật cao."
       />
 
       <section className="section-py bg-white">
