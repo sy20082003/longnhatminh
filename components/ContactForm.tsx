@@ -103,10 +103,10 @@ export default function ContactForm() {
           name="service"
           className="w-full rounded-xl border border-navy-200 px-4 py-3 text-sm outline-none transition-colors focus:border-navy-500"
         >
-          <option>Thiết kế & Thi công Trạm biến áp</option>
-          <option>Thiết kế & Thi công Điện nhà xưởng</option>
-          <option>Thi công Điện mặt trời áp mái</option>
-          <option>Khác</option>
+          <option>Sản xuất Kết cấu thép & Phụ kiện Lưới điện</option>
+          <option>Phân phối Vật tư & Thiết bị Đường dây 220kV</option>
+          <option>Cung cấp & lắp đặt hệ thống điện mặt trời</option>
+          <option>Nhập khẩu & Phân phối trực tiếp</option>
         </select>
       </div>
 
