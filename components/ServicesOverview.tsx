@@ -12,8 +12,8 @@ const services = [
     "Gia công kết cấu thép mạ kẽm nhúng nóng cho cột điện và trạm biến áp",
     "Sản xuất tủ điện, thang máng cáp và phụ kiện đấu nối"
   ],
-}
-  {
+},
+{
   icon: Cog,
   title: "Phân phối Vật tư & Thiết bị Đường dây và Trạm điện đến 220kV",
   desc: "Cung cấp đầy đủ vật tư, thiết bị cho các công trình đường dây và trạm điện đến 220kV, đáp ứng tiêu chuẩn kỹ thuật, chất lượng và tiến độ dự án.",
