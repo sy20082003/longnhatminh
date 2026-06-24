@@ -55,18 +55,23 @@ export default function Footer() {
           </h4>
           <ul className="mt-5 space-y-3 text-sm">
             <li>
-              <Link href="/dich-vu/tram-bien-ap" className="text-lg text-navy-300 hover:text-white">
-                Thiết kế & Thi công Trạm biến áp
+              <Link href="/dich-vu/tram-bien-ap" className="text-base text-navy-300 hover:text-white">
+                Sản xuất Kết cấu thép & Phụ kiện Lưới điện
               </Link>
             </li>
             <li>
-              <Link href="/dich-vu/dien-nha-xuong" className="text-lg text-navy-300 hover:text-white">
-                Thiết kế & Thi công Điện nhà xưởng
+              <Link href="/dich-vu/dien-nha-xuong" className="text-base text-navy-300 hover:text-white">
+                Phân phối Vật tư & Thiết bị Đường dây 220kV
               </Link>
             </li>
             <li>
-              <Link href="/dich-vu/dien-mat-troi" className="text-lg text-navy-300 hover:text-white">
-                Thi công Điện mặt trời áp mái
+              <Link href="/dich-vu/dien-mat-troi" className="text-base text-navy-300 hover:text-white">
+                Cung cấp & lắp đặt hệ thống điện mặt trời
+              </Link>
+            </li>
+             <li>
+              <Link href="/dich-vu/dien-mat-troi" className="text-base text-navy-300 hover:text-white">
+                Nhập khẩu & Phân phối trực tiếp
               </Link>
             </li>
           </ul>
