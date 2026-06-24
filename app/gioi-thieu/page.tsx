@@ -34,19 +34,22 @@ export default function GioiThieuPage() {
                 Hơn một thập kỷ đồng hành cùng các công trình điện
               </h2>
               <p className="mt-5 leading-relaxed text-navy-500">
-                Công ty TNHH Kỹ thuật Long Nhật Minh là đơn
-                vị chuyên về lĩnh vực thiết kế, thi công đường dây và trạm
-                biến áp công suất đến 35KV, cùng với hệ thống điện nhà xưởng,
-                khu công nghiệp. Với đội ngũ cán bộ kỹ sư và công nhân giàu
-                kinh nghiệm thực tiễn, chúng tôi tự hào đã đồng hành cùng
-                nhiều nhà đầu tư trong và ngoài nước qua hàng loạt dự án trên
-                khắp cả nước.
+                Công ty TNHH Kỹ Thuật Long Nhật Minh là đơn vị chuyên cung cấp vật tư,
+                thiết bị điện phục vụ thi công xây lắp điện công trình.
+                Nhằm đáp ứng nhu cầu phát triển của ngành điện và quá trình công nghiệp hóa,
+                hiện đại hóa đất nước, công ty không ngừng mở rộng sản xuất và phân phối vật tư,
+                phụ kiện lưới điện, kết cấu thép cho đường dây và trạm điện đến 110kV, 
+                đồng thời cung cấp và lắp đặt hệ thống điện mặt trời. 
+                Với nhiều năm hoạt động, Long Nhật Minh đã cung cấp các sản phẩm và giải pháp chất lượng 
+                cho các công ty xây lắp điện, đơn vị thiết bị điện và các điện lực trên cả nước.
               </p>
               <p className="mt-4 leading-relaxed text-navy-500">
-                Một số dự án tiêu biểu mà Long Nhật Minh đã triển khai lắp
-                đặt hệ thống trạm biến áp bao gồm các doanh nghiệp sản xuất
-                trong lĩnh vực thức ăn chăn nuôi, phân bón, chế biến gỗ và
-                nhiều ngành công nghiệp khác trên cả nước.
+                Với phương châm “Uy tín – Tiến độ – Giá cả hợp lý”, Công ty TNHH Kỹ Thuật Long Nhật Minh 
+                luôn nỗ lực mang đến cho khách hàng những sản phẩm và dịch vụ chất lượng cao. 
+                Chúng tôi cam kết không ngừng nâng cao năng lực, xây dựng niềm tin và khẳng định uy tín thương hiệu 
+                trên thị trường. Đồng thời, Long Nhật Minh luôn mong muốn mở rộng hợp tác, 
+                lắng nghe các ý kiến đóng góp quý báu để ngày càng hoàn thiện hơn, 
+                hướng tới mối quan hệ hợp tác bền vững và lâu dài cùng Quý khách hàng.
               </p>
 
               <Link href="/lien-he" className="btn-primary mt-8">
