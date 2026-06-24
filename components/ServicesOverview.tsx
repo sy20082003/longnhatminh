@@ -42,8 +42,8 @@ const services = [
   },
   {
     icon: Sun,
-    title: "Điện mặt trời áp mái",
-    desc: "Thi công hệ thống điện mặt trời cho nhà xưởng và doanh nghiệp.",
+    title: "Hệ thống điện mặt trời",
+    desc: "Cung cấp, tư vấn, thiết kế, thi công hệ thống điện mặt trời áp mái cho hộ gia đình, doanh nghiệp, nhà xưởng.",
     href: "/dich-vu/dien-mat-troi",
     points: [
       "Thiết kế & thi công trọn gói",
