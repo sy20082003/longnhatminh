@@ -11,9 +11,22 @@ const navLinks = [
   {
     label: "Dịch vụ",
     children: [
-      { href: "/dich-vu/tram-bien-ap", label: "Thiết kế & Thi công Trạm biến áp" },
-      { href: "/dich-vu/dien-nha-xuong", label: "Thiết kế & Thi công Điện nhà xưởng" },
-      { href: "/dich-vu/dien-mat-troi", label: "Thi công Điện mặt trời áp mái" },
+      { 
+        href: "/dich-vu/ket-cau-thep-phu-kien-luoi-dien", 
+        label: "Sản xuất Kết cấu thép & Phụ kiện Lưới điện" 
+      },
+      { 
+        href: "/dich-vu/vat-tu-thiet-bi-duong-day-tram-dien", 
+        label: "Phân phối Vật tư & Thiết bị Đường dây 220kV" 
+      },
+      { 
+        href: "/dich-vu/dien-mat-troi", 
+        label: "Điện mặt trời áp mái" 
+      },
+      { 
+        href: "/dich-vu/nhap-khau-phan-phoi", 
+        label: "Nhập khẩu & Phân phối trực tiếp" 
+      },
     ],
   },
   { href: "/thu-vien-anh", label: "Thư viện ảnh" },
@@ -45,7 +58,7 @@ export default function Header() {
                   <ChevronDown size={15} />
                 </button>
                 {serviceOpen && (
-                  <div className="absolute left-0 top-full w-72 rounded-2xl border border-navy-100 bg-white p-2 shadow-soft">
+                  <div className="absolute left-0 top-full w-80 rounded-2xl border border-navy-100 bg-white p-2 shadow-soft">
                     {link.children.map((child) => (
                       <Link
                         key={child.href}
