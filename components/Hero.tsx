@@ -34,8 +34,8 @@ export default function Hero() {
           </h1>
           <p className="mt-6 max-w-xl text-base leading-relaxed text-navy-100 sm:text-lg">
             <strong>CTY TNHH KỸ THUẬT LONG NHẬT MINH</strong> đồng hành cùng nhà xưởng, khu công nghiệp và khu
-            dân cư trong thiết kế – thi công đường dây, trạm biến áp đến 35KV
-            và hệ thống điện nhà xưởng đạt chuẩn kỹ thuật cao.
+            dân cư trong thiết kế – thi công đường dây, trạm biến áp lên đến 220kV
+            và hệ thống điện năng lượng mặt trời đạt chuẩn kỹ thuật cao.
           </p>
           <div className="mt-9 flex flex-wrap gap-4">
             <Link href="/lien-he" className="btn-gold">
@@ -56,7 +56,7 @@ export default function Hero() {
               <p className="mt-1 text-xs text-navy-200 sm:text-sm">Công trình hoàn thành</p>
             </div>
             <div>
-              <p className="text-2xl font-extrabold text-white sm:text-3xl">35KV</p>
+              <p className="text-2xl font-extrabold text-white sm:text-3xl">220kV</p>
               <p className="mt-1 text-xs text-navy-200 sm:text-sm">Công suất tối đa</p>
             </div>
             <div>

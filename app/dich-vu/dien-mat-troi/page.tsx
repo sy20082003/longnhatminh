@@ -78,7 +78,7 @@ export default function DienMatTroiPage() {
     <>
       <PageHero
         eyebrow="Dịch vụ"
-        title="Thi công Điện mặt trời áp mái"
+        title="Cung cấp & lắp điện hệ thống điện mặt trời"
         desc="Giải pháp năng lượng mặt trời trọn gói cho hộ gia đình, nhà xưởng và doanh nghiệp — tiết kiệm chi phí điện, hoàn vốn nhanh và thân thiện với môi trường."
       />
 
