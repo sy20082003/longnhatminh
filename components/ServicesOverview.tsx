@@ -49,8 +49,8 @@ export default function ServicesOverview() {
           <span className="eyebrow">Lĩnh vực hoạt động</span>
           <h2 className="section-title">Dịch vụ chuyên sâu của chúng tôi</h2>
           <p className="mt-4 text-navy-500">
-            Từ khảo sát, thiết kế đến thi công và bàn giao — Long Nhật Minh
-            đảm nhận trọn vẹn quy trình với tiêu chuẩn kỹ thuật khắt khe.
+            Long Nhật Minh cung cấp giải pháp trọn gói từ thiết kế, cung ứng thiết bị đến sản xuất và thi công, 
+            phục vụ toàn diện cho hệ thống điện mặt trời, trạm biến áp và lưới điện.
           </p>
         </div>
 
