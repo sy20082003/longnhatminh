@@ -33,7 +33,7 @@ export default function Hero() {
             &amp; hệ thống <span className="bg-gold-gradient bg-clip-text text-transparent"> điện mặt trời</span> an toàn, bền vững
           </h1>
           <p className="mt-6 max-w-xl text-base leading-relaxed text-navy-100 sm:text-lg">
-            <strong>CTY TNHH KỸ THUẬT LONG NHẬT MINH</strong> Đồng hành cùng mọi công trình với tư cách là nhà sản xuất, phân phối và thi công uy tín thiết bị điện xây lắp, cùng hệ thống vật tư cho trạm điện lên đến 110kV - 220kV và hệ thống năng lượng mặt trời chuẩn kỹ thuật cao."
+            <strong>CTY TNHH KỸ THUẬT LONG NHẬT MINH</strong> Đồng hành cùng mọi công trình với tư cách là nhà sản xuất, phân phối và thi công uy tín thiết bị điện xây lắp, cùng hệ thống vật tư cho trạm điện lên đến 110kV - 220kV và hệ thống năng lượng mặt trời chuẩn kỹ thuật cao.
           </p>
           <div className="mt-9 flex flex-wrap gap-4">
             <Link href="/lien-he" className="btn-gold">
@@ -110,9 +110,9 @@ function HeroIllustration() {
   return (
    <div className="h-full w-full rounded-2xl overflow-hidden">
   <img 
-    src="/images/hero.jpg" // Hoặc đường dẫn đến ảnh khác của bạn (ví dụ: /images/tram-bien-ap.png)
+    src="/images/hero.jpg"
     alt="Hình ảnh minh họa"
-    className="h-full w-full object-cover" // Giúp ảnh tự động lấp đầy khung hình và bo góc đẹp mắt
+    className="h-full w-full object-cover"
   />
 </div>
   );
