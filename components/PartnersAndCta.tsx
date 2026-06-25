@@ -20,7 +20,7 @@ export default function PartnersAndCta() {
           <p className="text-xs font-bold uppercase tracking-wider text-navy-400">
             Được tin tưởng bởi nhiều doanh nghiệp
           </p>
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-x-10 gap-y-6">
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-x-4 gap-y-4">
             {partners.map((p) => (
               <div
                 key={p.name}
