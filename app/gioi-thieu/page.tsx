@@ -53,7 +53,7 @@ export default function GioiThieuPage() {
                 đơn vị thiết bị điện và các điện lực trên toàn quốc.
               </p>
               <p className="mt-4 leading-relaxed text-navy-500">
-                Với phương châm "Uy tín – Tiến độ – Giá cả hợp lý", Công ty TNHH Kỹ Thuật Long Nhật Minh 
+                Với phương châm &ldquo;Uy tín – Tiến độ – Giá cả hợp lý&rdquo;, Công ty TNHH Kỹ Thuật Long Nhật Minh
                 luôn cam kết mang đến sản phẩm và dịch vụ chất lượng, đáp ứng tốt nhu cầu của khách hàng. 
                 Chúng tôi mong muốn được đồng hành, hợp tác lâu dài và xây dựng niềm tin bền vững cùng Quý khách hàng.
               </p>
