@@ -27,22 +27,22 @@ export default function Footer() {
           </h4>
           <ul className="mt-5 space-y-3 text-sm">
             <li>
-              <Link href="/" className="text-lg text-navy-300 hover:text-white">
+              <Link href="/" className="text-base text-navy-300 hover:text-white">
                 Trang chủ
               </Link>
             </li>
             <li>
-                <Link href="/gioi-thieu" className="text-lg text-navy-300 hover:text-white">
+                <Link href="/gioi-thieu" className="text-base text-navy-300 hover:text-white">
                   Giới thiệu
               </Link>
             </li>
             <li>
-              <Link href="/thu-vien-anh" className="text-lg text-navy-300 hover:text-white">
+              <Link href="/thu-vien-anh" className="text-base text-navy-300 hover:text-white">
                 Thư viện ảnh
               </Link>
             </li>
             <li>
-              <Link href="/lien-he" className="text-lg text-navy-300 hover:text-white">
+              <Link href="/lien-he" className="text-base text-navy-300 hover:text-white">
                 Liên hệ
               </Link>
             </li>
