@@ -1,7 +1,16 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, Phone } from "lucide-react";
 
-const partners = ["Cám Thành Lợi", "Phân Bón Sông Gianh", "Gỗ Hiệp Phát", "Tỷ Minh", "Daizin"];
+const partners = [
+  { name: "Chấn Hưng", logo: "/images/logo-nhan-hang/chan-hung-logo.png" },
+  { name: "ACIT", logo: "/images/logo-nhan-hang/acit-logo.png" },
+  { name: "PCCC5", logo: "/images/logo-nhan-hang/pccc5-logo.png" },
+  { name: "SPower", logo: "/images/logo-nhan-hang/spower-logo.png" },
+  { name: "EVN PECC2", logo: "/images/logo-nhan-hang/evn-pecc2-logo.png" },
+  { name: "Vinaincon", logo: "/images/logo-nhan-hang/vinaincon-logo.png" },
+  { name: "EVN PECC1", logo: "/images/logo-nhan-hang/evn-pecc1-logo.png" },
+];
 
 export default function PartnersAndCta() {
   return (
@@ -13,12 +22,17 @@ export default function PartnersAndCta() {
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-x-10 gap-y-6">
             {partners.map((p) => (
-              <span
-                key={p}
-                className="text-lg font-bold tracking-tight text-navy-300 transition-colors hover:text-navy-700"
+              <div
+                key={p.name}
+                className="relative h-12 w-32 grayscale transition-all duration-300 hover:grayscale-0 hover:scale-105"
               >
-                {p}
-              </span>
+                <Image
+                  src={p.logo}
+                  alt={p.name}
+                  fill
+                  className="object-contain"
+                />
+              </div>
             ))}
           </div>
         </div>

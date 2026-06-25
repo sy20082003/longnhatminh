@@ -34,7 +34,7 @@ export default function GioiThieuPage() {
                 Hơn một thập kỷ đồng hành cùng các công trình điện
               </h2>
               <p className="mt-5 leading-relaxed text-navy-500">
-                CCông ty TNHH Kỹ Thuật Long Nhật Minh là đơn vị chuyên cung cấp vật tư, 
+                Công ty TNHH Kỹ Thuật Long Nhật Minh là đơn vị chuyên cung cấp vật tư, 
                 thiết bị điện phục vụ thi công xây lắp điện công trình. Công ty sản xuất và phân phối vật tư, 
                 phụ kiện lưới điện, kết cấu thép cho đường dây và trạm điện đến 110kV, 
                 đồng thời cung cấp và lắp đặt hệ thống điện mặt trời. Với nhiều năm hoạt động, 
