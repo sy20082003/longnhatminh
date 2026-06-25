@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, ShieldCheck, Zap, Clock } from "lucide-react";
 
 export default function Hero() {
@@ -108,12 +109,14 @@ export default function Hero() {
 
 function HeroIllustration() {
   return (
-   <div className="h-full w-full rounded-2xl overflow-hidden">
-  <img 
-    src="/images/hero.jpg"
-    alt="Hình ảnh minh họa"
-    className="h-full w-full object-cover"
-  />
-</div>
+    <div className="relative h-full w-full overflow-hidden rounded-2xl" style={{ minHeight: '360px' }}>
+      <Image
+        src="/images/hero.jpg"
+        alt="Hình ảnh minh họa"
+        fill
+        className="object-cover"
+        priority
+      />
+    </div>
   );
 }
