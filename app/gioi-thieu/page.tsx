@@ -1,4 +1,5 @@
 import { CheckCircle2, Award, Users, Wrench } from "lucide-react";
+import Image from "next/image";
 import PageHero from "@/components/PageHero";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
@@ -14,6 +15,16 @@ const commitments = [
   "Thi công đúng bản vẽ kỹ thuật, giám sát chặt chẽ trong suốt quá trình",
   "Tuân thủ quy định, được sự phê duyệt của ngành Điện lực trước khi đấu nối",
   "Đội ngũ kỹ sư, công nhân có nhiều năm kinh nghiệm thực tiễn tại các công trình lớn nhỏ",
+];
+
+const partners = [
+  { name: "Chấn Hưng", logo: "/images/logo-nhan-hang/chan-hung-logo.png" },
+  { name: "ACIT", logo: "/images/logo-nhan-hang/acit-logo.png" },
+  { name: "PCCC5", logo: "/images/logo-nhan-hang/pccc5-logo.png" },
+  { name: "SPower", logo: "/images/logo-nhan-hang/spower-logo.png" },
+  { name: "EVN PECC2", logo: "/images/logo-nhan-hang/evn-pecc2-logo.png" },
+  { name: "Vinaincon", logo: "/images/logo-nhan-hang/vinaincon-logo.png" },
+  { name: "EVN PECC1", logo: "/images/logo-nhan-hang/evn-pecc1-logo.png" },
 ];
 
 export default function GioiThieuPage() {
@@ -42,7 +53,7 @@ export default function GioiThieuPage() {
                 đơn vị thiết bị điện và các điện lực trên toàn quốc.
               </p>
               <p className="mt-4 leading-relaxed text-navy-500">
-                Với phương châm “Uy tín – Tiến độ – Giá cả hợp lý”, Công ty TNHH Kỹ Thuật Long Nhật Minh 
+                Với phương châm "Uy tín – Tiến độ – Giá cả hợp lý", Công ty TNHH Kỹ Thuật Long Nhật Minh 
                 luôn cam kết mang đến sản phẩm và dịch vụ chất lượng, đáp ứng tốt nhu cầu của khách hàng. 
                 Chúng tôi mong muốn được đồng hành, hợp tác lâu dài và xây dựng niềm tin bền vững cùng Quý khách hàng.
               </p>
@@ -100,17 +111,22 @@ export default function GioiThieuPage() {
             <span className="eyebrow">Khách hàng tiêu biểu</span>
             <h2 className="section-title">Một số doanh nghiệp đã hợp tác</h2>
           </div>
-          <div className="mt-10 grid grid-cols-2 gap-5 sm:grid-cols-3 lg:grid-cols-5">
-            {["Cám Thành Lợi", "Phân Bón Sông Gianh", "Gỗ Hiệp Phát", "Tỷ Minh", "Daizin"].map(
-              (p) => (
-                <div
-                  key={p}
-                  className="flex h-24 items-center justify-center rounded-2xl border border-navy-100 bg-soft-gradient px-3 text-center text-sm font-bold text-navy-600"
-                >
-                  {p}
+          <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
+            {partners.map((p) => (
+              <div
+                key={p.name}
+                className="flex h-24 w-48 items-center justify-center rounded-2xl border border-navy-100 bg-soft-gradient p-4 transition-all duration-300 hover:scale-105 hover:shadow-card"
+              >
+                <div className="relative h-full w-full">
+                  <Image
+                    src={p.logo}
+                    alt={p.name}
+                    fill
+                    className="object-contain"
+                  />
                 </div>
-              )
-            )}
+              </div>
+            ))}
           </div>
         </div>
       </section>
