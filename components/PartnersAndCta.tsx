@@ -24,7 +24,7 @@ export default function PartnersAndCta() {
             {partners.map((p) => (
               <div
                 key={p.name}
-                className="relative h-28 w-60 transition-all duration-300 hover:scale-105"
+                className="relative h-32 w-64 transition-all duration-300 hover:scale-105"
               >
                 <Image
                   src={p.logo}
