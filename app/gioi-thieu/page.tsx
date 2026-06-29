@@ -64,21 +64,43 @@ export default function GioiThieuPage() {
               </Link>
             </div>
 
-            <div className="grid grid-cols-1 gap-5 sm:grid-cols-3 lg:grid-cols-1">
-              {stats.map((s) => (
-                <div
-                  key={s.label}
-                  className="flex items-center gap-5 rounded-2xl border border-navy-100 bg-soft-gradient p-6"
-                >
-                  <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-navy-900 text-gold-400">
-                    <s.icon size={26} />
-                  </span>
-                  <div>
-                    <p className="text-2xl font-extrabold text-navy-900">{s.value}</p>
-                    <p className="text-sm text-navy-500">{s.label}</p>
-                  </div>
+            <div className="relative mt-8 pb-10 pr-8 lg:mt-0">
+              <div className="rounded-3xl shadow-soft overflow-hidden">
+                <Image
+                  src="/images/gt.jpg"
+                  alt="Long Nhật Minh - Thi công điện công nghiệp"
+                  width={600}
+                  height={450}
+                  className="h-auto w-full object-cover"
+                />
+              </div>
+              <div className="absolute -bottom-4 left-4 flex items-center gap-2 rounded-2xl bg-white px-4 py-3 shadow-soft">
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-navy-900 text-gold-400">
+                  <Award size={18} />
+                </span>
+                <div>
+                  <p className="text-sm font-extrabold text-navy-900">10+</p>
+                  <p className="text-xs text-navy-400">Năm kinh nghiệm</p>
                 </div>
-              ))}
+              </div>
+              <div className="absolute -top-4 right-4 flex items-center gap-2 rounded-2xl bg-white px-4 py-3 shadow-soft">
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-navy-900 text-gold-400">
+                  <Wrench size={18} />
+                </span>
+                <div>
+                  <p className="text-sm font-extrabold text-navy-900">150+</p>
+                  <p className="text-xs text-navy-400">Công trình hoàn thành</p>
+                </div>
+              </div>
+              <div className="absolute -bottom-4 right-4 flex items-center gap-2 rounded-2xl bg-navy-900 px-4 py-3 shadow-soft">
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-white/10 text-gold-400">
+                  <Users size={18} />
+                </span>
+                <div>
+                  <p className="text-sm font-extrabold text-white">30+</p>
+                  <p className="text-xs text-navy-300">Kỹ sư lành nghề</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
