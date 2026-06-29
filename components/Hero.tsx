@@ -109,12 +109,13 @@ export default function Hero() {
 
 function HeroIllustration() {
   return (
-    <div className="relative h-full w-full overflow-hidden rounded-2xl" style={{ minHeight: '360px' }}>
+    <div className="w-full overflow-hidden rounded-2xl">
       <Image
         src="/images/hero.jpg"
         alt="Hình ảnh minh họa"
-        fill
-        className="object-cover"
+        width={800}
+        height={600}
+        className="h-auto w-full"
         priority
       />
     </div>
