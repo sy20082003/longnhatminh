@@ -33,7 +33,8 @@ export default function GioiThieuPage() {
       <section className="section-py bg-white">
         <div className="container-px mx-auto max-w-7xl">
           <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
-            {/* Cột trái: nội dung */}
+
+            {/* Cột trái: nội dung chữ */}
             <div>
               <span className="eyebrow">Câu chuyện của chúng tôi</span>
               <h2 className="section-title">
@@ -59,9 +60,9 @@ export default function GioiThieuPage() {
             </div>
 
             {/* Cột phải: ảnh + badge nổi */}
-            <div className="relative pb-6 pl-0 pr-6 pt-0">
+            <div className="relative mt-8 pb-8 pr-8 lg:mt-0">
               {/* Ảnh chính */}
-              <div className="overflow-hidden rounded-3xl shadow-soft">
+              <div className="rounded-3xl shadow-soft overflow-hidden">
                 <Image
                   src="/images/gioi-thieu.jpg"
                   alt="Long Nhật Minh - Thi công điện công nghiệp"
@@ -71,39 +72,40 @@ export default function GioiThieuPage() {
                 />
               </div>
 
-              {/* Badge 10+ năm - góc dưới trái */}
-              <div className="absolute -bottom-2 -left-2 flex items-center gap-3 rounded-2xl bg-white px-4 py-3 shadow-soft">
-                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-navy-900 text-gold-400">
+              {/* Badge 10+ năm - dưới trái */}
+              <div className="absolute -bottom-4 left-4 flex items-center gap-2 rounded-2xl bg-white px-4 py-3 shadow-soft">
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-navy-900 text-gold-400">
                   <Award size={18} />
                 </span>
                 <div>
-                  <p className="text-base font-extrabold text-navy-900">10+</p>
+                  <p className="text-sm font-extrabold text-navy-900">10+</p>
                   <p className="text-xs text-navy-400">Năm kinh nghiệm</p>
                 </div>
               </div>
 
-              {/* Badge 150+ công trình - góc trên phải */}
-              <div className="absolute -right-2 top-6 flex items-center gap-3 rounded-2xl bg-white px-4 py-3 shadow-soft">
-                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-navy-900 text-gold-400">
+              {/* Badge 150+ công trình - trên phải */}
+              <div className="absolute -top-4 right-4 flex items-center gap-2 rounded-2xl bg-white px-4 py-3 shadow-soft">
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-navy-900 text-gold-400">
                   <Wrench size={18} />
                 </span>
                 <div>
-                  <p className="text-base font-extrabold text-navy-900">150+</p>
+                  <p className="text-sm font-extrabold text-navy-900">150+</p>
                   <p className="text-xs text-navy-400">Công trình hoàn thành</p>
                 </div>
               </div>
 
-              {/* Badge 30+ kỹ sư - góc dưới phải */}
-              <div className="absolute -bottom-2 right-4 flex items-center gap-3 rounded-2xl bg-navy-900 px-4 py-3 shadow-soft">
-                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-gold-400/20 text-gold-400">
+              {/* Badge 30+ kỹ sư - dưới phải */}
+              <div className="absolute -bottom-4 right-4 flex items-center gap-2 rounded-2xl bg-navy-900 px-4 py-3 shadow-soft">
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-white/10 text-gold-400">
                   <Users size={18} />
                 </span>
                 <div>
-                  <p className="text-base font-extrabold text-white">30+</p>
+                  <p className="text-sm font-extrabold text-white">30+</p>
                   <p className="text-xs text-navy-300">Kỹ sư lành nghề</p>
                 </div>
               </div>
             </div>
+
           </div>
         </div>
       </section>
