@@ -79,8 +79,8 @@ export default function GioiThieuPage() {
                   <Award size={18} />
                 </span>
                 <div>
-                  <p className="text-sm font-extrabold text-navy-900">10+</p>
-                  <p className="text-xs text-navy-400">Năm kinh nghiệm</p>
+                  <p className="text-sm font-extrabold text-white">10+</p>
+                  <p className="text-xs text-navy-300">Năm kinh nghiệm</p>
                 </div>
               </div>
               <div className="absolute -top-4 right-4 flex items-center gap-2 rounded-2xl bg-white px-4 py-3 shadow-soft">
@@ -88,8 +88,8 @@ export default function GioiThieuPage() {
                   <Wrench size={18} />
                 </span>
                 <div>
-                  <p className="text-sm font-extrabold text-navy-900">150+</p>
-                  <p className="text-xs text-navy-400">Công trình hoàn thành</p>
+                  <p className="text-sm font-extrabold text-white">150+</p>
+                  <p className="text-xs text-navy-300">Công trình hoàn thành</p>
                 </div>
               </div>
               <div className="absolute -bottom-4 right-4 flex items-center gap-2 rounded-2xl bg-navy-900 px-4 py-3 shadow-soft">
