@@ -67,7 +67,7 @@
               <div className="relative mt-8 pb-10 pr-8 lg:mt-0">
               <div className="rounded-3xl shadow-soft overflow-hidden">
                 <Image
-                  src="/images/gioi-thieu.jpg"
+                  src="/images/gt.jpg"
                   alt="Long Nhật Minh - Thi công điện công nghiệp"
                   width={600}
                   height={450}
