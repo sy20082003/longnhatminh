@@ -74,8 +74,8 @@ export default function GioiThieuPage() {
                   className="h-auto w-full object-cover"
                 />
               </div>
-              <div className="absolute -bottom-4 left-4 flex items-center gap-2 rounded-2xl bg-white px-4 py-3 shadow-soft">
-                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-navy-900 text-gold-400">
+               <div className="absolute -bottom-4 right-4 flex items-center gap-2 rounded-2xl bg-navy-900 px-4 py-3 shadow-soft">
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-white/10 text-gold-400">
                   <Award size={18} />
                 </span>
                 <div>
@@ -83,8 +83,8 @@ export default function GioiThieuPage() {
                   <p className="text-xs text-navy-300">Năm kinh nghiệm</p>
                 </div>
               </div>
-              <div className="absolute -top-4 right-4 flex items-center gap-2 rounded-2xl bg-white px-4 py-3 shadow-soft">
-                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-navy-900 text-gold-400">
+              <div className="absolute -bottom-4 right-4 flex items-center gap-2 rounded-2xl bg-navy-900 px-4 py-3 shadow-soft">
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-white/10 text-gold-400">
                   <Wrench size={18} />
                 </span>
                 <div>
