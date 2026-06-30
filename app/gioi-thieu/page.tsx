@@ -6,8 +6,8 @@ import { ArrowRight } from "lucide-react";
 
 const stats = [
   { icon: Award, value: "10+", label: "Năm kinh nghiệm" },
-  { icon: Wrench, value: "150+", label: "Công trình đã thực hiện" },
-  { icon: Users, value: "30+", label: "Kỹ sư & công nhân lành nghề" },
+  { icon: Wrench, value: "150+", label: "Công trình hoàn thành" },
+  { icon: Users, value: "30+", label: "Kỹ sư lành nghề" },
 ];
 
 const commitments = [
@@ -64,7 +64,8 @@ export default function GioiThieuPage() {
               </Link>
             </div>
 
-            <div className="relative mt-8 pb-10 pr-8 lg:mt-0">
+            {/* Khu vực ảnh và khối thông số được căn chỉnh theo image_037f21.jpg */}
+            <div className="relative mt-8 pb-12 lg:mt-0">
               <div className="rounded-3xl shadow-soft overflow-hidden">
                 <Image
                   src="/images/gt.jpg"
@@ -74,34 +75,29 @@ export default function GioiThieuPage() {
                   className="h-auto w-full object-cover"
                 />
               </div>
-               <div className="absolute -bottom-4 right-4 flex items-center gap-2 rounded-2xl bg-navy-900 px-4 py-3 shadow-soft">
-                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-white/10 text-gold-400">
-                  <Award size={18} />
-                </span>
-                <div>
-                  <p className="text-sm font-extrabold text-white">10+</p>
-                  <p className="text-xs text-navy-300">Năm kinh nghiệm</p>
-                </div>
-              </div>
-              <div className="absolute -bottom-4 right-4 flex items-center gap-2 rounded-2xl bg-navy-900 px-4 py-3 shadow-soft">
-                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-white/10 text-gold-400">
-                  <Wrench size={18} />
-                </span>
-                <div>
-                  <p className="text-sm font-extrabold text-white">150+</p>
-                  <p className="text-xs text-navy-300">Công trình hoàn thành</p>
-                </div>
-              </div>
-              <div className="absolute -bottom-4 right-4 flex items-center gap-2 rounded-2xl bg-navy-900 px-4 py-3 shadow-soft">
-                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-white/10 text-gold-400">
-                  <Users size={18} />
-                </span>
-                <div>
-                  <p className="text-sm font-extrabold text-white">30+</p>
-                  <p className="text-xs text-navy-300">Kỹ sư lành nghề</p>
-                </div>
+
+              {/* Cụm thông số gom chung đặt tại góc dưới bên phải của ảnh */}
+              <div className="absolute -bottom-2 right-4 flex flex-col gap-3 rounded-2xl bg-navy-900 p-4 shadow-lg min-w-[200px]">
+                {stats.map((item, index) => {
+                  const IconComponent = item.icon;
+                  return (
+                    <div 
+                      key={index} 
+                      className="flex items-center gap-3 border-b border-white/10 pb-2 last:border-0 last:pb-0"
+                    >
+                      <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-white/10 text-gold-400">
+                        <IconComponent size={18} />
+                      </span>
+                      <div>
+                        <p className="text-sm font-extrabold text-white">{item.value}</p>
+                        <p className="text-[11px] text-navy-300 whitespace-nowrap">{item.label}</p>
+                      </div>
+                    </div>
+                  );
+                })}
               </div>
             </div>
+
           </div>
         </div>
       </section>
