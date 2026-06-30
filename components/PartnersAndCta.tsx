@@ -1,6 +1,9 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, Phone } from "lucide-react";
+import { ArrowRight, Phone, ChevronLeft, ChevronRight } from "lucide-react";
+import { useState } from "react";
 
 const partners = [
   { name: "Chấn Hưng", logo: "/images/logo-nhan-hang/chan-hung-logo.png" },
@@ -13,6 +16,11 @@ const partners = [
 ];
 
 export default function PartnersAndCta() {
+  const [current, setCurrent] = useState(0);
+
+  const prev = () => setCurrent((i) => (i - 1 + partners.length) % partners.length);
+  const next = () => setCurrent((i) => (i + 1) % partners.length);
+
   return (
     <>
       <section className="bg-white py-14">
@@ -20,19 +28,58 @@ export default function PartnersAndCta() {
           <p className="text-xs font-bold uppercase tracking-wider text-navy-400">
             Được tin tưởng bởi nhiều doanh nghiệp
           </p>
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-x-4 gap-y-4">
+
+          {/* Desktop: hiện tất cả logo */}
+          <div className="mt-8 hidden flex-wrap items-center justify-center gap-x-4 gap-y-4 sm:flex">
             {partners.map((p) => (
               <div
                 key={p.name}
                 className="relative h-32 w-64 transition-all duration-300 hover:scale-105"
               >
-                <Image
-                  src={p.logo}
-                  alt={p.name}
-                  fill
-                  className="object-contain"
-                />
+                <Image src={p.logo} alt={p.name} fill className="object-contain" />
               </div>
+            ))}
+          </div>
+
+          {/* Mobile: dạng slider */}
+          <div className="mt-8 flex items-center justify-center gap-4 sm:hidden">
+            <button
+              onClick={prev}
+              className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-navy-200 bg-white text-navy-700 shadow-sm transition-colors hover:bg-navy-50"
+              aria-label="Logo trước"
+            >
+              <ChevronLeft size={20} />
+            </button>
+
+            <div className="relative h-28 w-52">
+              <Image
+                src={partners[current].logo}
+                alt={partners[current].name}
+                fill
+                className="object-contain"
+              />
+            </div>
+
+            <button
+              onClick={next}
+              className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-navy-200 bg-white text-navy-700 shadow-sm transition-colors hover:bg-navy-50"
+              aria-label="Logo tiếp theo"
+            >
+              <ChevronRight size={20} />
+            </button>
+          </div>
+
+          {/* Dots indicator - mobile */}
+          <div className="mt-4 flex justify-center gap-1.5 sm:hidden">
+            {partners.map((_, idx) => (
+              <button
+                key={idx}
+                onClick={() => setCurrent(idx)}
+                className={`h-1.5 rounded-full transition-all ${
+                  idx === current ? "w-4 bg-navy-700" : "w-1.5 bg-navy-200"
+                }`}
+                aria-label={`Logo ${idx + 1}`}
+              />
             ))}
           </div>
         </div>
@@ -43,7 +90,6 @@ export default function PartnersAndCta() {
           <div className="relative overflow-hidden rounded-3xl bg-hero-gradient px-8 py-14 text-center sm:px-16 sm:py-20">
             <div className="pointer-events-none absolute -right-16 -top-16 h-64 w-64 rounded-full bg-gold-400/20 blur-3xl" />
             <div className="pointer-events-none absolute -bottom-16 -left-16 h-64 w-64 rounded-full bg-navy-400/20 blur-3xl" />
-
             <h2 className="relative text-3xl font-extrabold text-white sm:text-4xl">
               Sẵn sàng khởi động dự án điện của bạn?
             </h2>
