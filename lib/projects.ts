@@ -169,7 +169,7 @@ export const projects: Project[] = [
     category: "Điện mặt trời",
     location: "Trà Ôn, Vĩnh Long",
     capacity: "110 kV",
-    year: "2025",
+    year: "2026",
     summary: "Cung cấp, lắp đặt và bàn giao hệ thống điện mặt trời áp mái cho Trạm Biến Áp 110kV Trà Ôn, cung cấp điện năng tự dùng cho hệ thống chiếu sáng và thiết bị phụ trợ trong trạm.",
     details: [
       "Khảo sát mái nhà trạm, đánh giá kết cấu chịu lực và hướng lắp đặt tấm pin tối ưu",
