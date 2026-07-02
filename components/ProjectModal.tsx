@@ -50,13 +50,14 @@ export default function ProjectModal({
           <X size={20} />
         </button>
 
-        {/* Main image */}
-        <div className="relative aspect-[16/10] w-full overflow-hidden bg-navy-900">
+        {/* Main image — fit đúng tỉ lệ ảnh thật, không crop */}
+        <div className="relative w-full bg-navy-950">
           <Image
             src={project.images[activeImg].src}
             alt={project.images[activeImg].alt ?? project.title}
-            fill
-            className="object-cover"
+            width={900}
+            height={600}
+            className="h-auto max-h-[60vh] w-full object-contain"
           />
 
           {project.images.length > 1 && (
