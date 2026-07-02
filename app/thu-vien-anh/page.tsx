@@ -16,10 +16,11 @@ export default function ThuVienAnhPage() {
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [page, setPage] = useState(0);
 
-  const filtered =
+const filtered = (
     activeCategory === "Tất cả"
       ? projects
-      : projects.filter((p) => p.category === activeCategory);
+      : projects.filter((p) => p.category === activeCategory)
+  ).slice().sort((a, b) => Number(b.year) - Number(a.year));
 
   const totalPages = Math.ceil(filtered.length / PER_PAGE);
   const paginated = filtered.slice(page * PER_PAGE, page * PER_PAGE + PER_PAGE);
