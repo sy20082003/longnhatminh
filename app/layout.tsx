@@ -12,8 +12,14 @@ const beVietnam = Be_Vietnam_Pro({
   display: "swap",
 });
 
+const baseUrl = "https://longnhatminh-six.vercel.app";
+
 export const metadata: Metadata = {
-  title: "Long Nhật Minh | Thiết kế & Thi công Trạm biến áp, Điện nhà xưởng",
+  metadataBase: new URL(baseUrl),
+  title: {
+    default: "Long Nhật Minh | Thiết kế & Thi công Trạm biến áp, Điện nhà xưởng",
+    template: "%s | Long Nhật Minh",
+  },
   description:
     "Long Nhật Minh chuyên thiết kế, thi công trạm biến áp đến 35KV và hệ thống điện nhà xưởng, khu công nghiệp. Đội ngũ kỹ sư giàu kinh nghiệm, thi công an toàn, đúng tiến độ.",
   keywords: [
@@ -23,6 +29,36 @@ export const metadata: Metadata = {
     "trạm biến áp 35kv",
     "Long Nhật Minh",
   ],
+  alternates: {
+    canonical: "/",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
+  openGraph: {
+    type: "website",
+    locale: "vi_VN",
+    url: baseUrl,
+    siteName: "Long Nhật Minh",
+    title: "Long Nhật Minh | Thiết kế & Thi công Trạm biến áp, Điện nhà xưởng",
+    description:
+      "Long Nhật Minh chuyên thiết kế, thi công trạm biến áp đến 35KV và hệ thống điện nhà xưởng, khu công nghiệp.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Long Nhật Minh | Thiết kế & Thi công Trạm biến áp, Điện nhà xưởng",
+    description:
+      "Long Nhật Minh chuyên thiết kế, thi công trạm biến áp đến 35KV và hệ thống điện nhà xưởng, khu công nghiệp.",
+  },
+  verification: {
+    // Dán mã xác minh từ Google Search Console vào đây, ví dụ:
+    // google: "abcdefg12345",
+  },
 };
 
 export default function RootLayout({
