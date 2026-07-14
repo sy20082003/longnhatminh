@@ -12,7 +12,7 @@ const beVietnam = Be_Vietnam_Pro({
   display: "swap",
 });
 
-const baseUrl = "https://longnhatminh.com.vn";
+const baseUrl = "https://www.longnhatminh.com.vn";
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
