@@ -57,7 +57,7 @@ export const metadata: Metadata = {
       "Long Nhật Minh chuyên cung cấp và thi công trạm biến áp lên đến 220kV và hệ thống điện mặt trời, khu công nghiệp.",
   },
   verification: {
-    // Dán mã xác minh từ Google Search Console vào đây, ví dụ:
+    // Dán mã xác minh từ Google Search Console vào đây nếu có, ví dụ:
     // google: "abcdefg12345",
   },
 };
@@ -70,6 +70,20 @@ export default function RootLayout({
   return (
     <html lang="vi" className={beVietnam.variable}>
       <body className="font-sans antialiased bg-white text-navy-900">
+        {/* ĐOẠN SCHEMA ĐÃ ĐƯỢC ĐƯA VÀO ĐÂY ĐỂ GOOGLE CÓ THỂ ĐỌC ĐƯỢC */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Long Nhật Minh",
+              "url": "https://www.longnhatminh.com.vn",
+              "logo": "https://www.longnhatminh.com.vn/images/logoweb.png",
+            }),
+          }}
+        />
+
         <Header />
         <main>{children}</main>
         <Footer />
@@ -78,15 +92,3 @@ export default function RootLayout({
     </html>
   );
 }
-<script
-  type="application/ld+json"
-  dangerouslySetInnerHTML={{
-    __html: JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Long Nhật Minh",
-      "url": "https://www.longnhatminh.com.vn",
-      "logo": "https://www.longnhatminh.com.vn/images/logoweb.png",
-    }),
-  }}
-/>
