@@ -17,16 +17,17 @@ const baseUrl = "https://longnhatminh.com.vn";
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: "Long Nhật Minh | Thiết kế & Thi công Trạm biến áp, Điện nhà xưởng",
+    default: "Long Nhật Minh | Cung cấp & Thi công Trạm biến áp, Điện nhà xưởng",
     template: "%s | Long Nhật Minh",
   },
   description:
-    "Long Nhật Minh chuyên thiết kế, thi công trạm biến áp đến 35KV và hệ thống điện nhà xưởng, khu công nghiệp. Đội ngũ kỹ sư giàu kinh nghiệm, thi công an toàn, đúng tiến độ.",
+    "Long Nhật Minh chuyên cung cấp và thi công trạm biến áp lên đến 220kV và hệ thống điện mặt trời, khu công nghiệp. Đội ngũ kỹ sư giàu kinh nghiệm, thi công an toàn, đúng tiến độ.",
   keywords: [
-    "thiết kế trạm biến áp",
+    "cung cấp trạm biến áp",
     "thi công trạm biến áp",
     "điện nhà xưởng",
-    "trạm biến áp 35kv",
+    "trạm biến áp 110kV đến 220kV",
+    "hệ thống điện mặt trời",
     "Long Nhật Minh",
   ],
   alternates: {
@@ -45,15 +46,15 @@ export const metadata: Metadata = {
     locale: "vi_VN",
     url: baseUrl,
     siteName: "Long Nhật Minh",
-    title: "Long Nhật Minh | Thiết kế & Thi công Trạm biến áp, Điện nhà xưởng",
+    title: "Long Nhật Minh | Cung cấp & Thi công Trạm biến áp, Điện nhà xưởng",
     description:
-      "Long Nhật Minh chuyên thiết kế, thi công trạm biến áp đến 35KV và hệ thống điện nhà xưởng, khu công nghiệp.",
+      "Long Nhật Minh chuyên cung cấp và thi công trạm biến áp lên đến 220kV và hệ thống điện mặt trời, khu công nghiệp.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Long Nhật Minh | Thiết kế & Thi công Trạm biến áp, Điện nhà xưởng",
+    title: "Long Nhật Minh | Cung cấp & Thi công Trạm biến áp, Điện nhà xưởng",
     description:
-      "Long Nhật Minh chuyên thiết kế, thi công trạm biến áp đến 35KV và hệ thống điện nhà xưởng, khu công nghiệp.",
+      "Long Nhật Minh chuyên cung cấp và thi công trạm biến áp lên đến 220kV và hệ thống điện mặt trời, khu công nghiệp.",
   },
   verification: {
     // Dán mã xác minh từ Google Search Console vào đây, ví dụ:
