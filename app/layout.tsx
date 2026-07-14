@@ -78,3 +78,15 @@ export default function RootLayout({
     </html>
   );
 }
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Long Nhật Minh",
+      "url": "https://www.longnhatminh.com.vn",
+      "logo": "https://www.longnhatminh.com.vn/images/logo.png",
+    }),
+  }}
+/>
