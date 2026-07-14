@@ -15,9 +15,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
 
   return routes.map((route) => ({
-    url: `${baseUrl}${route}`,
+    url: `${baseUrl}${route}`, // Đã sửa: Chỉ dùng duy nhất dấu backtick ``, bỏ dấu nháy bọc ngoài
     lastModified: new Date(),
-    changeFrequency: "monthly",
+    changeFrequency: "monthly" as const, // Ép kiểu 'as const' để khớp chuẩn Type của Next.js
     priority: route === "" ? 1 : 0.8,
   }));
 }
