@@ -33,7 +33,7 @@ export default function GioiThieuPage() {
       <PageHero
         eyebrow="Về chúng tôi"
         title="Long Nhật Minh"
-        desc="Đối tác đáng tin cậy trong lĩnh vực thiết kế, thi công trạm biến áp và điện nhà xưởng trên toàn quốc."
+        desc="Đối tác đáng tin cậy trong lĩnh vực cung cấp, thi công trạm biến áp và hệ thống điện mặt trời trên toàn quốc."
       />
 
       <section className="section-py bg-white">
