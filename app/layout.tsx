@@ -86,7 +86,7 @@ export default function RootLayout({
       "@type": "Organization",
       "name": "Long Nhật Minh",
       "url": "https://www.longnhatminh.com.vn",
-      "logo": "https://www.longnhatminh.com.vn/images/logo.png",
+      "logo": "https://www.longnhatminh.com.vn/images/logoweb.png",
     }),
   }}
 />
