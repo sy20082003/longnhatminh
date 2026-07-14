@@ -55,8 +55,8 @@ export default function Hero() {
               <p className="mt-1 text-xs text-navy-200 sm:text-sm">Công trình hoàn thành</p>
             </div>
             <div>
-              <p className="text-2xl font-extrabold text-white sm:text-3xl">220kV</p>
-              <p className="mt-1 text-xs text-navy-200 sm:text-sm">Công suất tối đa</p>
+              <p className="text-2xl font-extrabold text-white sm:text-3xl">10+</p>
+              <p className="mt-1 text-xs text-navy-200 sm:text-sm">Năm kinh nghiệm</p>
             </div>
             <div>
               <p className="text-2xl font-extrabold text-white sm:text-3xl">100%</p>
