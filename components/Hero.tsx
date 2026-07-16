@@ -34,7 +34,7 @@ export default function Hero() {
             &amp; hệ thống <span className="bg-gold-gradient bg-clip-text text-transparent"> điện mặt trời</span> an toàn, bền vững
           </h1>
           <p className="mt-6 max-w-xl text-base leading-relaxed text-navy-100 sm:text-lg">
-            <strong>CTY TNHH KỸ THUẬT LONG NHẬT MINH</strong> Đồng hành cùng mọi công trình với tư cách là nhà cung cấp, phân phối và thi công uy tín thiết bị điện xây lắp, cùng hệ thống vật tư cho trạm điện từ 110kV - 220kV và hệ thống năng lượng mặt trời chuẩn kỹ thuật cao.
+            <strong>CÔNG TY TNHH KỸ THUẬT LONG NHẬT MINH</strong> Đồng hành cùng mọi công trình với tư cách là nhà cung cấp, phân phối và thi công uy tín thiết bị điện xây lắp, cùng hệ thống vật tư cho các trạm biến áp từ 110kV - 220kV và hệ thống điện năng lượng mặt trời chuẩn kỹ thuật cao.
           </p>
           <div className="mt-9 flex flex-wrap gap-4">
             <Link href="/lien-he" className="btn-gold">

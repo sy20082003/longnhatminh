@@ -17,7 +17,7 @@ const navLinks = [
       },
       { 
         href: "/dich-vu/phan-phoi", 
-        label: "Phân phối Vật tư & Thiết bị Đường dây 220kV" 
+        label: "Phân phối vật tư thiết bị cho đường dây và trạm biến áp" 
       },
       { 
         href: "/dich-vu/dien-mat-troi", 

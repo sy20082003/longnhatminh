@@ -31,7 +31,7 @@ const services = [
   },
   {
     icon: Cog,
-    title: "Phân phối Vật tư & Thiết bị Đường dây 220kV",
+    title: "Phân phối vật tư thiết bị cho đường dây và trạm biến áp",
     desc: "Cung cấp vật tư, thiết bị cho đường dây và trạm biến áp đến 220kV.",
     href: "/dich-vu/phan-phoi",
     points: [

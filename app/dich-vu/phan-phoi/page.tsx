@@ -83,7 +83,7 @@ export default function VatTuTramDienPage() {
     <>
       <PageHero
         eyebrow="Dịch vụ"
-        title="Phân phối Vật tư & Thiết bị Đường dây & Trạm điện đến 220kV"
+        title="Phân phối vật tư thiết bị cho đường dây và trạm biến áp"
         desc="Long Nhật Minh chuyên cung cấp trọn gói giải pháp vật tư, thiết bị điện chất lượng cao cho các công trình đường dây và trạm biến áp, đảm bảo tiêu chuẩn vận hành an toàn và tối ưu chi phí."
       />
 

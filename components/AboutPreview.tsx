@@ -38,7 +38,7 @@ export default function AboutPreview() {
             Trải qua nhiều năm hoạt động, chúng tôi tích lũy kinh nghiệm thực
             tiễn từ nhiều công trình lớn nhỏ trên cả nước, trở thành đối tác
             đáng tin cậy của các nhà đầu tư trong và ngoài nước trong lĩnh vực cung cấp vật tư, thiết bị điện,
-            thiết kế, thi công đường dây và trạm biến áp lên đến 220kV cùng hệ điện mặt trời áp mái.
+            thiết kế, thi công đường dây và trạm biến áp lên đến 220kV cùng hệ thống điện mặt trời áp mái.
           </p>
 
           <ul className="mt-7 space-y-3">
