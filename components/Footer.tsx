@@ -61,7 +61,7 @@ export default function Footer() {
             </li>
             <li>
               <Link href="/dich-vu/phan-phoi" className="text-base text-navy-300 hover:text-white">
-               Phân phối vật tư thiết bị cho đường dây và trạm biến áp"
+               Phân phối vật tư thiết bị cho đường dây và trạm biến áp
               </Link>
             </li>
             <li>
