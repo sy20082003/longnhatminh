@@ -13,7 +13,7 @@ export default function CategoryCard({
   productCount: number;
 }) {
   const Icon = category.icon;
-  const displayImage = coverImage ?? category.image;
+  const displayImage = category.image ?? coverImage;
 
   return (
     <Link
