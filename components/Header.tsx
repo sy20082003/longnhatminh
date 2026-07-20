@@ -29,6 +29,7 @@ const navLinks = [
       },
     ],
   },
+  { href: "/san-pham", label: "Sản phẩm" },
   { href: "/thu-vien-anh", label: "Thư viện ảnh" },
   { href: "/lien-he", label: "Liên hệ" },
 ];

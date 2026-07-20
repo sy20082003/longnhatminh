@@ -7,6 +7,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "",
     "/gioi-thieu",
     "/lien-he",
+    "/san-pham",
     "/thu-vien-anh",
     "/dich-vu/dien-mat-troi",
     "/dich-vu/nhap-khau",
