@@ -139,7 +139,7 @@ export default function ProductModal({
           </ul>
 
           <div className="mt-7 flex flex-wrap items-center gap-4">
-            <p className="text-lg font-bold text-navy-900">Liên hệ báo giá</p>
+            <p className="text-2xl font-extrabold text-navy-900">Liên hệ báo giá</p>
             <a href="/lien-he" className="btn-primary">
               Nhận báo giá sản phẩm này
             </a>

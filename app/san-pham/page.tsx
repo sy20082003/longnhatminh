@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, Search, X } from "lucide-react";
 import PageHero from "@/components/PageHero";
 import ProductCard from "@/components/ProductCard";
 import ProductModal from "@/components/ProductModal";
@@ -14,18 +14,38 @@ const categories = [
   "Vật tư & Thiết bị điện mặt trời",
   "Vật tư tiếp địa chống sét",
 ] as const;
-const PER_PAGE = 9;
+const PER_PAGE = 12;
+
+// Chuẩn hóa chuỗi: bỏ dấu tiếng Việt, chữ thường, để tìm không dấu vẫn ra kết quả
+function stripDiacritics(str: string) {
+  return str
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/đ/g, "d")
+    .replace(/Đ/g, "D")
+    .toLowerCase();
+}
 
 export default function SanPhamPage() {
   const [activeCategory, setActiveCategory] =
     useState<(typeof categories)[number]>("Tất cả");
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [page, setPage] = useState(0);
+  const [query, setQuery] = useState("");
 
-  const filtered =
+  const byCategory =
     activeCategory === "Tất cả"
       ? products
       : products.filter((p) => p.category === activeCategory);
+
+  const normalizedQuery = stripDiacritics(query.trim());
+  const queryWords = normalizedQuery.split(/\s+/).filter(Boolean);
+  const filtered = queryWords.length
+    ? byCategory.filter((p) => {
+        const haystack = stripDiacritics(`${p.name} ${p.category} ${p.summary}`);
+        return queryWords.every((w) => haystack.includes(w));
+      })
+    : byCategory;
 
   const totalPages = Math.ceil(filtered.length / PER_PAGE);
   const paginated = filtered.slice(page * PER_PAGE, page * PER_PAGE + PER_PAGE);
@@ -33,6 +53,11 @@ export default function SanPhamPage() {
 
   function handleCategory(cat: (typeof categories)[number]) {
     setActiveCategory(cat);
+    setPage(0);
+  }
+
+  function handleQueryChange(value: string) {
+    setQuery(value);
     setPage(0);
   }
 
@@ -46,8 +71,34 @@ export default function SanPhamPage() {
 
       <section className="section-py bg-white">
         <div className="container-px mx-auto max-w-7xl">
+          {/* Thanh tìm kiếm sản phẩm */}
+          <div className="mx-auto max-w-xl">
+            <div className="relative">
+              <Search
+                size={20}
+                className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-navy-400"
+              />
+              <input
+                type="text"
+                value={query}
+                onChange={(e) => handleQueryChange(e.target.value)}
+                placeholder="Tìm kiếm sản phẩm theo tên, danh mục..."
+                className="w-full rounded-full border border-navy-200 bg-white py-3.5 pl-12 pr-11 text-sm font-medium text-navy-800 shadow-sm outline-none transition-colors placeholder:text-navy-400 focus:border-navy-400"
+              />
+              {query && (
+                <button
+                  onClick={() => handleQueryChange("")}
+                  aria-label="Xóa tìm kiếm"
+                  className="absolute right-3.5 top-1/2 flex h-7 w-7 -translate-y-1/2 items-center justify-center rounded-full text-navy-400 transition-colors hover:bg-navy-50 hover:text-navy-700"
+                >
+                  <X size={16} />
+                </button>
+              )}
+            </div>
+          </div>
+
           {/* Bộ lọc danh mục */}
-          <div className="flex flex-wrap justify-center gap-3">
+          <div className="mt-6 flex flex-wrap justify-center gap-3">
             {categories.map((cat) => (
               <button
                 key={cat}
@@ -65,7 +116,7 @@ export default function SanPhamPage() {
 
           {/* Lưới sản phẩm */}
           {paginated.length > 0 ? (
-            <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
               {paginated.map((product) => (
                 <ProductCard
                   key={product.id}
@@ -76,7 +127,9 @@ export default function SanPhamPage() {
             </div>
           ) : (
             <p className="mt-12 text-center text-navy-400">
-              Chưa có sản phẩm trong danh mục này.
+              {normalizedQuery
+                ? `Không tìm thấy sản phẩm phù hợp với "${query}".`
+                : "Chưa có sản phẩm trong danh mục này."}
             </p>
           )}
 
