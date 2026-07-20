@@ -63,4 +63,104 @@ export const products: Product[] = [
       },
     ],
   },
+  {
+    id: "cap-dong-tran",
+    name: "Cáp đồng trần",
+    category: "vat-tu-tiep-dia-chong-set",
+    unit: "Mét",
+    summary:
+      "Cáp đồng trần dùng để liên kết hệ thống tiếp địa, dẫn sét xuống đất an toàn cho trạm biến áp và công trình điện.",
+    details: [
+      "Chất liệu đồng nguyên chất, độ dẫn điện cao",
+      "Khả năng chịu dòng sét và dòng sự cố tốt",
+      "Đa dạng tiết diện theo yêu cầu thiết kế hệ thống tiếp địa",
+      "Độ bền cao, chống ăn mòn trong môi trường chôn đất",
+    ],
+    images: [
+      {
+        src: "/images/san_pham/vttd/cap_dong_tran.jpg",
+        alt: "Cáp đồng trần",
+      },
+    ],
+  },
+  {
+    id: "kep-khung-han",
+    name: "Kẹp khung hàn",
+    category: "vat-tu-tiep-dia-chong-set",
+    unit: "Cái",
+    summary:
+      "Kẹp khung hàn dùng để cố định khuôn hàn hóa nhiệt trong quá trình thi công mối nối tiếp địa.",
+    details: [
+      "Kết cấu chắc chắn, giữ chặt khuôn hàn trong lúc hàn",
+      "Thao tác nhanh, thuận tiện khi thi công ngoài công trường",
+      "Tương thích với các loại khuôn hàn hóa nhiệt phổ biến",
+      "Độ bền cao, tái sử dụng nhiều lần",
+    ],
+    images: [
+      {
+        src: "/images/san_pham/vttd/kep_khung_han.jpg",
+        alt: "Kẹp khung hàn",
+      },
+    ],
+  },
+  {
+    id: "khuon-han-goldweld",
+    name: "Khuôn hàn Goldweld",
+    category: "vat-tu-tiep-dia-chong-set",
+    unit: "Bộ",
+    summary:
+      "Khuôn hàn hóa nhiệt Goldweld dùng để tạo mối hàn giữa cáp đồng, cọc tiếp địa và các phụ kiện hệ thống tiếp địa - chống sét.",
+    details: [
+      "Chất liệu graphite chịu nhiệt cao, tuổi thọ dài",
+      "Đa dạng khuôn theo từng kiểu mối nối (T, thẳng, chữ thập...)",
+      "Đảm bảo mối hàn đạt độ dẫn điện và độ bền cơ học cao",
+      "Phù hợp thi công hệ thống tiếp địa trạm biến áp, đường dây tải điện",
+    ],
+    images: [
+      {
+        src: "/images/san_pham/vttd/khung_han_goldwweld.jpg",
+        alt: "Khuôn hàn Goldweld",
+      },
+    ],
+  },
+  {
+    id: "thanh-dong-cai",
+    name: "Thanh đồng cái",
+    category: "vat-tu-tiep-dia-chong-set",
+    unit: "Cây",
+    summary:
+      "Thanh đồng cái (thanh cái tiếp địa) dùng làm điểm đấu nối trung tâm cho hệ thống tiếp địa - chống sét công trình.",
+    details: [
+      "Chất liệu đồng nguyên chất, dẫn điện tốt, chống oxy hóa",
+      "Khoan sẵn lỗ bắt vít, thuận tiện đấu nối nhiều dây tiếp địa",
+      "Đa dạng kích thước theo yêu cầu công trình",
+      "Lắp đặt trong tủ điện, phòng kỹ thuật hoặc trạm biến áp",
+    ],
+    images: [
+      {
+        src: "/images/san_pham/vttd/thanh_dong_cai.jpg",
+        alt: "Thanh đồng cái",
+      },
+    ],
+  },
+  {
+    id: "thuoc-han-goldweld",
+    name: "Thuốc hàn Goldweld",
+    category: "vat-tu-tiep-dia-chong-set",
+    unit: "Gói",
+    summary:
+      "Thuốc hàn hóa nhiệt Goldweld dùng kèm khuôn hàn để tạo mối hàn tiếp địa bền vững, dẫn điện tốt.",
+    details: [
+      "Phản ứng nhiệt nhôm tạo mối hàn đồng chắc chắn, không cần nguồn điện",
+      "Đa dạng trọng lượng theo tiết diện cáp và loại mối nối",
+      "Mối hàn chịu được dòng sự cố và điều kiện môi trường khắc nghiệt",
+      "Thi công nhanh, phù hợp công trình tiếp địa - chống sét ngoài trời",
+    ],
+    images: [
+      {
+        src: "/images/san_pham/vttd/thuoc_han_goldweld.jpg",
+        alt: "Thuốc hàn Goldweld",
+      },
+    ],
+  },
 ];
