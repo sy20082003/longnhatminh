@@ -13,6 +13,7 @@ export default function CategoryCard({
   productCount: number;
 }) {
   const Icon = category.icon;
+  const displayImage = coverImage ?? category.image;
 
   return (
     <Link
@@ -20,9 +21,9 @@ export default function CategoryCard({
       className="group flex flex-col overflow-hidden rounded-2xl border border-navy-100 bg-white shadow-card transition-all hover:-translate-y-1 hover:shadow-soft"
     >
       <div className="relative aspect-[4/3] overflow-hidden bg-navy-50">
-        {coverImage ? (
+        {displayImage ? (
           <Image
-            src={coverImage}
+            src={displayImage}
             alt={category.name}
             fill
             className="object-cover transition-transform duration-500 group-hover:scale-105"

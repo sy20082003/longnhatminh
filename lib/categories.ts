@@ -1,30 +1,23 @@
 import {
   Sun,
-  Cable,
-  CircuitBoard,
-  Layers,
   Zap,
   Building2,
   GaugeCircle,
-  Lightbulb,
   type LucideIcon,
 } from "lucide-react";
 
 export type CategorySlug =
   | "he-thong-dien-mat-troi"
-  | "day-cap-dien"
-  | "thiet-bi-dien"
-  | "thang-mang-cap"
   | "vat-tu-tiep-dia-chong-set"
   | "ket-cau-thep-phu-kien-luoi-dien"
-  | "vat-tu-tram-bien-ap"
-  | "thiet-bi-chieu-sang";
+  | "vat-tu-tram-bien-ap";
 
 export type Category = {
   slug: CategorySlug;
   name: string;
   description: string;
-  icon: LucideIcon; // dùng làm ảnh đại diện khi danh mục chưa có sản phẩm/ảnh thật
+  icon: LucideIcon; // dùng làm ảnh đại diện khi danh mục chưa có sản phẩm/ảnh thật và cũng chưa có "image"
+  image?: string; // đường dẫn ảnh thật (ưu tiên hiển thị thay icon khi danh mục chưa có sản phẩm)
 };
 
 /**
@@ -39,27 +32,7 @@ export const categories: Category[] = [
     description:
       "Cung cấp vật tư và giải pháp điện mặt trời áp mái, hòa lưới, độc lập và lưu trữ.",
     icon: Sun,
-  },
-  {
-    slug: "day-cap-dien",
-    name: "Dây cáp điện",
-    description:
-      "Phân phối dây cáp điện các loại: hạ thế, trung thế, cáp điều khiển, cáp chống cháy.",
-    icon: Cable,
-  },
-  {
-    slug: "thiet-bi-dien",
-    name: "Thiết bị điện",
-    description:
-      "Cung cấp thiết bị điện chính hãng: MCB, MCCB, ACB, Contactor, Relay, SPD...",
-    icon: CircuitBoard,
-  },
-  {
-    slug: "thang-mang-cap",
-    name: "Thang máng cáp",
-    description:
-      "Sản xuất và cung cấp thang máng cáp sắt, mạ kẽm, inox, sơn tĩnh điện.",
-    icon: Layers,
+    image: "/images/cover_htdmt.png",
   },
   {
     slug: "vat-tu-tiep-dia-chong-set",
@@ -67,6 +40,7 @@ export const categories: Category[] = [
     description:
       "Cọc tiếp địa, dây đồng, kẹp tiếp địa, thuốc hàn hóa nhiệt và phụ kiện.",
     icon: Zap,
+    image: "/images/cover_vttd.jpg",
   },
   {
     slug: "ket-cau-thep-phu-kien-luoi-dien",
@@ -74,6 +48,7 @@ export const categories: Category[] = [
     description:
       "Gia công kết cấu thép, phụ kiện đường dây và trạm biến áp đến 220kV.",
     icon: Building2,
+    image: "/images/cc-thep-ma-kem-bulong-tbt-ba-queo/anh-1.jpg",
   },
   {
     slug: "vat-tu-tram-bien-ap",
@@ -81,13 +56,7 @@ export const categories: Category[] = [
     description:
       "Cung cấp vật tư, thiết bị cho trạm biến áp và hệ thống điện công nghiệp.",
     icon: GaugeCircle,
-  },
-  {
-    slug: "thiet-bi-chieu-sang",
-    name: "Thiết bị chiếu sáng",
-    description:
-      "Đèn đường LED, đèn pha, đèn nhà xưởng và thiết bị chiếu sáng công nghiệp.",
-    icon: Lightbulb,
+    image: "/images/tba-110kv-vinh-loc/anh-1.jpg",
   },
 ];
 

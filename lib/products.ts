@@ -58,7 +58,7 @@ export const products: Product[] = [
     ],
     images: [
       {
-        src: "/images/san-pham/coc-tiep-dia-chong-set/anh-1.jpg",
+        src: "/images/san-pham/vttd/coc_tiep_dia_01.png",
         alt: "Cọc tiếp địa chống sét",
       },
     ],
