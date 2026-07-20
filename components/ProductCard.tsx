@@ -1,6 +1,7 @@
 import { Eye } from "lucide-react";
 import Image from "next/image";
 import type { Product } from "@/lib/products";
+import { getCategoryBySlug } from "@/lib/categories";
 
 export default function ProductCard({
   product,
@@ -10,6 +11,7 @@ export default function ProductCard({
   onClick: () => void;
 }) {
   const cover = product.images[0];
+  const categoryName = getCategoryBySlug(product.category)?.name ?? product.category;
 
   return (
     <button
@@ -37,7 +39,7 @@ export default function ProductCard({
       </div>
       <div className="p-3">
         <p className="text-[11px] font-bold uppercase tracking-wider text-gold-600">
-          {product.category}
+          {categoryName}
         </p>
         <p className="mt-1 text-sm font-bold leading-snug text-navy-800">{product.name}</p>
         <p className="mt-1.5 text-sm font-extrabold text-navy-900">Liên hệ báo giá</p>

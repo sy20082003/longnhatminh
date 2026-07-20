@@ -1,4 +1,5 @@
 import { MetadataRoute } from "next";
+import { categories } from "@/lib/categories";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://www.longnhatminh.com.vn";
@@ -8,6 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/gioi-thieu",
     "/lien-he",
     "/san-pham",
+    ...categories.map((c) => `/san-pham/${c.slug}`),
     "/thu-vien-anh",
     "/dich-vu/dien-mat-troi",
     "/dich-vu/nhap-khau",

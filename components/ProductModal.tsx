@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { X, ChevronLeft, ChevronRight, Package } from "lucide-react";
 import Image from "next/image";
 import type { Product } from "@/lib/products";
+import { getCategoryBySlug } from "@/lib/categories";
 
 export default function ProductModal({
   product,
@@ -13,6 +14,7 @@ export default function ProductModal({
   onClose: () => void;
 }) {
   const [activeImg, setActiveImg] = useState(0);
+  const categoryName = getCategoryBySlug(product.category)?.name ?? product.category;
 
   useEffect(() => {
     setActiveImg(0);
@@ -111,7 +113,7 @@ export default function ProductModal({
         {/* Nội dung */}
         <div className="p-6 sm:p-8">
           <span className="text-xs font-bold uppercase tracking-wider text-gold-600">
-            {product.category}
+            {categoryName}
           </span>
           <h2 className="mt-1.5 text-2xl font-extrabold text-navy-900 sm:text-3xl">
             {product.name}
