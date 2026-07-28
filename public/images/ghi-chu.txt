@@ -1,0 +1,3 @@
+ht = hệ thống
+mt = mặt trời
+tba = tram biến áp

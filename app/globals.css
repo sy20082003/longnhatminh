@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #0c1840;
+}
+
+::selection {
+  background-color: #fde685;
+  color: #0c1840;
+}
+
+.container-px {
+  @apply px-5 sm:px-8 lg:px-12;
+}
+
+.section-py {
+  @apply py-16 sm:py-20 lg:py-28;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center gap-2 rounded-full bg-navy-700 px-6 py-3 text-sm font-semibold text-white shadow-soft transition-all hover:bg-navy-800 hover:shadow-lg active:scale-95;
+}
+
+.btn-gold {
+  @apply inline-flex items-center justify-center gap-2 rounded-full bg-gold-gradient px-6 py-3 text-sm font-semibold text-navy-900 shadow-md transition-all hover:brightness-105 hover:shadow-lg active:scale-95;
+}
+
+.btn-outline {
+  @apply inline-flex items-center justify-center gap-2 rounded-full border-2 border-navy-200 bg-white px-6 py-3 text-sm font-semibold text-navy-700 transition-all hover:border-navy-400 hover:bg-navy-50 active:scale-95;
+}
+
+.eyebrow {
+  @apply inline-block rounded-full bg-gold-100 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-gold-700;
+}
+
+.section-title {
+  @apply mt-4 text-3xl font-extrabold tracking-tight text-navy-900 sm:text-4xl lg:text-5xl;
+}
