@@ -14,7 +14,9 @@ export default function Footer() {
             cam kết an toàn và đúng tiến độ.
           </p>
           <a
-            href="#"
+            href="https://www.facebook.com/fanpage.longnhatminh"
+            target="_blank"
+            rel="noopener noreferrer"
             className="mt-5 inline-flex h-10 w-10 items-center justify-center rounded-full bg-navy-800 transition-colors hover:bg-gold-500 hover:text-navy-900"
           >
             <Facebook size={18} />
