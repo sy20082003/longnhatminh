@@ -34,7 +34,7 @@ export default function LienHePage() {
         eyebrow="Liên hệ"
         title="Kết nối với Long Nhật Minh"
         desc="Gửi yêu cầu để được kỹ sư khảo sát, tư vấn giải pháp và báo giá miễn phí cho công trình của bạn."
-        image="/images/banner.png"
+        image="/images/website.png"
       />
 
       <section className="section-py bg-white">

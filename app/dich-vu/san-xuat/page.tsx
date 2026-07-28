@@ -85,6 +85,7 @@ export default function KetCauThepPage() {
         eyebrow="Dịch vụ sản xuất"
         title="Sản xuất Kết cấu thép & Phụ kiện Lưới điện"
         desc="Long Nhật Minh là đơn vị cơ khí chính xác chuyên cung cấp các giải pháp kết cấu thép và phụ kiện lưới điện hơp chuẩn, đáp ứng các tiêu chuẩn kỹ thuật khắt khe của ngành điện lực."
+        image="/images/website.png"
       />
 
       {/* CORE FEATURES SECTION */}

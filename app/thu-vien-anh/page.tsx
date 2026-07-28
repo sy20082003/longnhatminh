@@ -38,6 +38,7 @@ const filtered = (
         eyebrow="Thư viện"
         title="Hình ảnh công trình tiêu biểu"
         desc="Bấm vào từng công trình để xem chi tiết thông tin, hạng mục thực hiện và thêm hình ảnh minh họa."
+        image="/images/website.png"
       />
 
       <section className="section-py bg-white">

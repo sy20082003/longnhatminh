@@ -85,6 +85,7 @@ export default function NhapKhauPhanPhoiPage() {
         eyebrow="Dịch vụ thương mại"
         title="Nhập khẩu & Phân phối trực tiếp"
         desc="Long Nhật Minh cung cấp giải pháp cung ứng thiết bị điện cao thế, trung thế chuyên dụng từ các hãng quốc tế, bảo đảm đầy đủ pháp lý kỹ thuật và vận hành an toàn cho hệ thống."
+        image="/images/website.png"
       />
 
       {/* CORE FEATURES SECTION */}

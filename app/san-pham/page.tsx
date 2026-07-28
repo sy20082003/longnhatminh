@@ -34,6 +34,7 @@ export default function SanPhamPage() {
         eyebrow="Sản phẩm"
         title="Danh mục sản phẩm"
         desc="Vật tư, thiết bị điện do Long Nhật Minh sản xuất, phân phối và nhập khẩu. Chọn một danh mục để xem các sản phẩm cụ thể, hoặc liên hệ để được báo giá theo nhu cầu công trình."
+        image="/images/website.png"
       />
 
       <section className="section-py bg-white">

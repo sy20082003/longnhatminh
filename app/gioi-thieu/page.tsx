@@ -1,150 +1,105 @@
-import { CheckCircle2, Award, Users, Wrench } from "lucide-react";
-import Image from "next/image";
+import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import PageHero from "@/components/PageHero";
-import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import ContactForm from "@/components/ContactForm";
 
-const stats = [
-  { icon: Award, value: "10+", label: "Năm kinh nghiệm" },
-  { icon: Wrench, value: "150+", label: "Công trình hoàn thành" },
-  { icon: Users, value: "30+", label: "Kỹ sư lành nghề" },
+const contactInfo = [
+  {
+    icon: MapPin,
+    title: "Địa chỉ",
+    lines: [
+      "1146/51/29 Quang Trung, Phường Thông Tây Hội, TP. Hồ Chí Minh",
+    ],
+  },
+  {
+    icon: Phone,
+    title: "Điện thoại",
+    lines: ["0901 835 103 (Mr. Long)", "Hotline: 0938 978 138"],
+  },
+  {
+    icon: Mail,
+    title: "Email",
+    lines: ["longnhatminh.info@gmail.com"],
+  },
+  {
+    icon: Clock,
+    title: "Giờ làm việc",
+    lines: ["Thứ 2 - Thứ 7: 7:30 - 17:30", "Hỗ trợ khẩn cấp 24/7"],
+  },
 ];
 
-const commitments = [
-  "Vật tư, thiết bị có nguồn gốc xuất xứ rõ ràng, đầy đủ giấy chứng nhận CO, CQ",
-  "Thi công đúng bản vẽ kỹ thuật, giám sát chặt chẽ trong suốt quá trình",
-  "Tuân thủ quy định, được sự phê duyệt của ngành Điện lực trước khi đấu nối",
-  "Đội ngũ kỹ sư, công nhân có nhiều năm kinh nghiệm thực tiễn tại các công trình lớn nhỏ",
-];
-
-const partners = [
-  { name: "Chấn Hưng", logo: "/images/logo-nhan-hang/chan-hung-logo.png" },
-  { name: "ACIT", logo: "/images/logo-nhan-hang/acit-logo.png" },
-  { name: "PCCC5", logo: "/images/logo-nhan-hang/pccc5-logo.png" },
-  { name: "SPower", logo: "/images/logo-nhan-hang/spower-logo.png" },
-  { name: "EVN PECC2", logo: "/images/logo-nhan-hang/evn-pecc2-logo.png" },
-  { name: "Vinaincon", logo: "/images/logo-nhan-hang/vinaincon-logo.png" },
-  { name: "EVN PECC1", logo: "/images/logo-nhan-hang/evn-pecc1-logo.png" },
-];
-
-export default function GioiThieuPage() {
+export default function LienHePage() {
   return (
     <>
       <PageHero
-        eyebrow="Về chúng tôi"
-        title="Long Nhật Minh"
-        desc="Đối tác đáng tin cậy trong lĩnh vực cung cấp, thi công trạm biến áp và hệ thống điện mặt trời trên toàn quốc."
+        eyebrow="Liên hệ"
+        title="Kết nối với Long Nhật Minh"
+        desc="Gửi yêu cầu để được kỹ sư khảo sát, tư vấn giải pháp và báo giá miễn phí cho công trình của bạn."
+        image="/images/website.png"
       />
 
       <section className="section-py bg-white">
-        <div className="container-px mx-auto max-w-7xl">
-          <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
-            <div>
-              <span className="eyebrow">Câu chuyện của chúng tôi</span>
-              <h2 className="section-title">
-                Hơn một thập kỷ đồng hành cùng các công trình điện
-              </h2>
-              <p className="mt-5 leading-relaxed text-navy-500">
-                Công ty TNHH Kỹ Thuật Long Nhật Minh là đơn vị chuyên cung cấp vật tư, 
-                thiết bị điện phục vụ thi công xây lắp điện công trình. Công ty sản xuất và phân phối vật tư, 
-                phụ kiện lưới điện, kết cấu thép cho đường dây và trạm điện đến 110kV, 
-                đồng thời cung cấp và lắp đặt hệ thống điện mặt trời. Với nhiều năm hoạt động, 
-                Long Nhật Minh đã cung cấp các sản phẩm chất lượng cho nhiều công ty xây lắp điện, 
-                đơn vị thiết bị điện và các điện lực trên toàn quốc.
-              </p>
-              <p className="mt-4 leading-relaxed text-navy-500">
-                Với phương châm &ldquo;Uy tín – Tiến độ – Giá cả hợp lý&rdquo;, Công ty TNHH Kỹ Thuật Long Nhật Minh
-                luôn cam kết mang đến sản phẩm và dịch vụ chất lượng, đáp ứng tốt nhu cầu của khách hàng. 
-                Chúng tôi mong muốn được đồng hành, hợp tác lâu dài và xây dựng niềm tin bền vững cùng Quý khách hàng.
-              </p>
+        <div className="container-px mx-auto grid max-w-7xl gap-12 lg:grid-cols-5">
+          <div className="lg:col-span-2">
+            <h2 className="text-2xl font-extrabold text-navy-900">
+              Thông tin liên hệ
+            </h2>
+            <p className="mt-3 text-sm leading-relaxed text-navy-500">
+              Quý khách có thể liên hệ trực tiếp qua điện thoại, email hoặc
+              điền thông tin vào biểu mẫu, đội ngũ LONG NHAT MINH TECHNICAL COMPANY LIMITED
+              sẽ phản hồi trong thời gian sớm nhất.
+            </p>
 
-              <Link href="/lien-he" className="btn-primary mt-8">
-                Liên hệ với chúng tôi
-                <ArrowRight size={18} />
-              </Link>
-            </div>
-
-            {/* Khu vực ảnh và khối thông số được căn chỉnh theo image_037f21.jpg */}
-            <div className="relative mt-8 pb-12 lg:mt-0">
-              <div className="rounded-3xl shadow-soft overflow-hidden">
-                <Image
-                  src="/images/gt.jpg"
-                  alt="Long Nhật Minh - Thi công điện công nghiệp"
-                  width={600}
-                  height={450}
-                  className="h-auto w-full object-cover"
-                />
-              </div>
-
-              {/* Cụm thông số gom chung đặt tại góc dưới bên phải của ảnh */}
-              <div className="absolute -bottom-2 right-4 flex flex-col gap-3 rounded-2xl bg-navy-900 p-4 shadow-lg min-w-[200px]">
-                {stats.map((item, index) => {
-                  const IconComponent = item.icon;
-                  return (
-                    <div 
-                      key={index} 
-                      className="flex items-center gap-3 border-b border-white/10 pb-2 last:border-0 last:pb-0"
-                    >
-                      <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-white/10 text-gold-400">
-                        <IconComponent size={18} />
-                      </span>
-                      <div>
-                        <p className="text-sm font-extrabold text-white">{item.value}</p>
-                        <p className="text-[11px] text-navy-300 whitespace-nowrap">{item.label}</p>
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      <section className="section-py bg-soft-gradient">
-        <div className="container-px mx-auto max-w-7xl">
-          <div className="mx-auto max-w-2xl text-center">
-            <span className="eyebrow">Cam kết chất lượng</span>
-            <h2 className="section-title">Tiêu chuẩn chúng tôi luôn tuân thủ</h2>
-          </div>
-
-          <div className="mt-12 grid gap-5 sm:grid-cols-2">
-            {commitments.map((c) => (
-              <div
-                key={c}
-                className="flex items-start gap-4 rounded-2xl bg-white p-6 shadow-card"
-              >
-                <CheckCircle2 size={24} className="mt-0.5 shrink-0 text-navy-600" />
-                <p className="text-sm leading-relaxed text-navy-700">{c}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="section-py bg-white">
-        <div className="container-px mx-auto max-w-7xl">
-          <div className="mx-auto max-w-2xl text-center">
-            <span className="eyebrow">Khách hàng tiêu biểu</span>
-            <h2 className="section-title">Một số doanh nghiệp đã hợp tác</h2>
-          </div>
-          <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
-            {partners.map((p) => (
-              <div
-                key={p.name}
-                className="flex h-24 w-48 items-center justify-center rounded-2xl border border-navy-100 bg-soft-gradient p-4 transition-all duration-300 hover:scale-105 hover:shadow-card"
-              >
-                <div className="relative h-full w-full">
-                  <Image
-                    src={p.logo}
-                    alt={p.name}
-                    fill
-                    className="object-contain"
-                  />
+            <div className="mt-8 space-y-5">
+              {contactInfo.map((c) => (
+                <div key={c.title} className="flex items-start gap-4">
+                  <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-navy-50 text-navy-700">
+                    <c.icon size={20} />
+                  </span>
+                  <div>
+                    <p className="text-sm font-bold text-navy-900">{c.title}</p>
+                    {c.lines.map((l) => (
+                      <p key={l} className="text-sm text-navy-500">
+                        {l}
+                      </p>
+                    ))}
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
+
+            <a
+              href="https://zalo.me/0938978138"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-gold mt-8 w-full sm:w-auto"
+            >
+              Chat qua Zalo
+            </a>
+          </div>
+
+          <div className="rounded-3xl border border-navy-100 bg-soft-gradient p-7 shadow-card sm:p-9 lg:col-span-3">
+            <h2 className="text-2xl font-extrabold text-navy-900">
+              Gửi yêu cầu tư vấn
+            </h2>
+            <p className="mt-2 text-sm text-navy-500">
+              Điền thông tin bên dưới, chúng tôi sẽ liên hệ lại trong vòng 24 giờ.
+            </p>
+            <div className="mt-7">
+              <ContactForm />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white pb-20">
+        <div className="container-px mx-auto max-w-7xl">
+          <div className="overflow-hidden rounded-3xl border border-navy-100">
+            <iframe
+              title="Bản đồ Long Nhật Minh"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.187091882168!2d106.6351551746226!3d10.84102819226709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f5c7e8b8e7b%3A0x9a5c6e5b5c5e5b5c!2zMTE0NiA0MSBxdWFuZyBUcnVuZywgVGjDoG5nIFRo4buNIFRodeG6rW4gSG9pLCBUaMOgbmcgVGjhuqFjaCwgSG_DoG5nIEjDoCBO4buZaSwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1697040000000"
+              className="h-[380px] w-full"
+              loading="lazy"
+            />
           </div>
         </div>
       </section>

@@ -18,7 +18,12 @@ export default function DanhMucSanPhamPage({ params }: { params: { slug: string 
 
   return (
     <>
-      <PageHero eyebrow="Sản phẩm" title={category.name} desc={category.description} />
+      <PageHero
+        eyebrow="Sản phẩm"
+        title={category.name}
+        desc={category.description}
+        image="/images/website.png"
+      />
 
       <section className="section-py bg-white">
         <div className="container-px mx-auto max-w-7xl">

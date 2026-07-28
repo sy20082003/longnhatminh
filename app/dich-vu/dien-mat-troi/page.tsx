@@ -80,6 +80,7 @@ export default function DienMatTroiPage() {
         eyebrow="Dịch vụ"
         title="Cung cấp & lắp điện hệ thống điện mặt trời"
         desc="Giải pháp năng lượng mặt trời trọn gói cho hộ gia đình, nhà xưởng và doanh nghiệp — tiết kiệm chi phí điện, hoàn vốn nhanh và thân thiện với môi trường."
+        image="/images/website.png"
       />
 
       {/* Features */}
