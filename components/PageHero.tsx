@@ -18,7 +18,7 @@ export default function PageHero({ eyebrow, title, desc, image }: PageHeroProps)
             fill
             priority
             sizes="100vw"
-            className="object-cover"
+            className="object-cover blur-sm scale-105"
           />
           <div className="absolute inset-0 bg-navy-900/75" />
         </>
