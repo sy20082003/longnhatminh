@@ -1,106 +1,161 @@
-import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
+import {
+  ArrowRight,
+  ShieldCheck,
+  Gem,
+  Gauge,
+  Leaf,
+  CheckCircle2,
+} from "lucide-react";
 import PageHero from "@/components/PageHero";
-import ContactForm from "@/components/ContactForm";
 
-const contactInfo = [
+const stats = [
+  { value: "10+", label: "năm kinh nghiệm" },
+  { value: "150+", label: "công trình đã triển khai" },
+  { value: "30+", label: "kỹ sư & kỹ thuật viên" },
+];
+
+const highlights = [
+  "Đội ngũ kỹ sư, công nhân nhiều năm kinh nghiệm thực tiễn",
+  "Vật tư, thiết bị có đầy đủ giấy chứng nhận CO, CQ",
+  "Đã triển khai hàng trăm công trình trên toàn quốc",
+  "Quy trình giám sát thi công chặt chẽ, minh bạch",
+];
+
+const values = [
   {
-    icon: MapPin,
-    title: "Địa chỉ",
-    lines: [
-      "1146/51/29 Quang Trung, Phường Thông Tây Hội, TP. Hồ Chí Minh",
-    ],
+    icon: ShieldCheck,
+    title: "An toàn",
+    desc: "Tuân thủ nghiêm ngặt quy chuẩn an toàn điện trong mọi khâu khảo sát, thi công và bàn giao công trình.",
   },
   {
-    icon: Phone,
-    title: "Điện thoại",
-    lines: ["0901 835 103 (Mr. Long)", "Hotline: 0938 978 138"],
+    icon: Gem,
+    title: "Chất lượng",
+    desc: "Vật tư, thiết bị chính hãng, đầy đủ chứng từ CO/CQ, được kiểm định trước khi đưa vào công trình.",
   },
   {
-    icon: Mail,
-    title: "Email",
-    lines: ["longnhatminh.info@gmail.com"],
+    icon: Gauge,
+    title: "Hiệu quả",
+    desc: "Tối ưu phương án kỹ thuật và tiến độ thi công, giúp khách hàng tiết kiệm chi phí đầu tư lâu dài.",
   },
   {
-    icon: Clock,
-    title: "Giờ làm việc",
-    lines: ["Thứ 2 - Thứ 7: 7:30 - 17:30", "Hỗ trợ khẩn cấp 24/7"],
+    icon: Leaf,
+    title: "Bền vững",
+    desc: "Hướng đến các giải pháp năng lượng thân thiện môi trường, đồng hành lâu dài cùng đối tác.",
   },
 ];
 
-export default function LienHePage() {
+export default function GioiThieuPage() {
   return (
     <>
       <PageHero
-        eyebrow="Liên hệ"
-        title="Kết nối với Long Nhật Minh"
-        desc="Gửi yêu cầu để được kỹ sư khảo sát, tư vấn giải pháp và báo giá miễn phí cho công trình của bạn."
+        eyebrow="Giới thiệu"
+        title="Về Long Nhật Minh"
+        desc="Công ty TNHH Kỹ thuật Long Nhật Minh — đối tác tin cậy trong cung cấp vật tư, thiết bị điện, thiết kế và thi công đường dây, trạm biến áp cùng hệ thống điện mặt trời."
         image="/images/website.png"
       />
 
       <section className="section-py bg-white">
-        <div className="container-px mx-auto grid max-w-7xl gap-12 lg:grid-cols-5">
-          <div className="lg:col-span-2">
-            <h2 className="text-2xl font-extrabold text-navy-900">
-              Thông tin liên hệ
-            </h2>
-            <p className="mt-3 text-sm leading-relaxed text-navy-500">
-              Quý khách có thể liên hệ trực tiếp qua điện thoại, email hoặc
-              điền thông tin vào biểu mẫu, đội ngũ LONG NHAT MINH TECHNICAL COMPANY LIMITED
-              sẽ phản hồi trong thời gian sớm nhất.
-            </p>
+        <div className="container-px mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-2">
+          <div className="relative">
+            <div className="overflow-hidden rounded-3xl shadow-soft">
+              <Image
+                src="/images/gt.jpg"
+                alt="Long Nhật Minh - Kỹ thuật điện công nghiệp"
+                width={560}
+                height={420}
+                className="h-full w-full object-cover"
+              />
+            </div>
 
-            <div className="mt-8 space-y-5">
-              {contactInfo.map((c) => (
-                <div key={c.title} className="flex items-start gap-4">
-                  <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-navy-50 text-navy-700">
-                    <c.icon size={20} />
-                  </span>
-                  <div>
-                    <p className="text-sm font-bold text-navy-900">{c.title}</p>
-                    {c.lines.map((l) => (
-                      <p key={l} className="text-sm text-navy-500">
-                        {l}
-                      </p>
-                    ))}
-                  </div>
+            <div className="absolute -bottom-6 left-1/2 flex w-[92%] -translate-x-1/2 justify-between gap-2 rounded-2xl bg-navy-900 px-4 py-5 text-center text-white shadow-soft sm:px-6">
+              {stats.map((s) => (
+                <div key={s.label}>
+                  <p className="text-2xl font-extrabold text-gold-400 sm:text-3xl">
+                    {s.value}
+                  </p>
+                  <p className="mt-1 text-[11px] leading-tight text-navy-200 sm:text-xs">
+                    {s.label}
+                  </p>
                 </div>
               ))}
             </div>
-
-            <a
-              href="https://zalo.me/0938978138"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-gold mt-8 w-full sm:w-auto"
-            >
-              Chat qua Zalo
-            </a>
           </div>
 
-          <div className="rounded-3xl border border-navy-100 bg-soft-gradient p-7 shadow-card sm:p-9 lg:col-span-3">
-            <h2 className="text-2xl font-extrabold text-navy-900">
-              Gửi yêu cầu tư vấn
+          <div>
+            <span className="eyebrow">Câu chuyện của chúng tôi</span>
+            <h2 className="section-title">
+              Đối tác tin cậy trong lĩnh vực điện công nghiệp
             </h2>
-            <p className="mt-2 text-sm text-navy-500">
-              Điền thông tin bên dưới, chúng tôi sẽ liên hệ lại trong vòng 24 giờ.
+            <p className="mt-5 leading-relaxed text-navy-500">
+              Trải qua nhiều năm hoạt động, Long Nhật Minh tích lũy kinh
+              nghiệm thực tiễn từ nhiều công trình lớn nhỏ trên cả nước, trở
+              thành đối tác đáng tin cậy của các nhà đầu tư trong và ngoài
+              nước trong lĩnh vực cung cấp vật tư, thiết bị điện, thiết kế,
+              thi công đường dây và trạm biến áp lên đến 220kV cùng hệ thống
+              điện mặt trời áp mái.
             </p>
-            <div className="mt-7">
-              <ContactForm />
-            </div>
+
+            <ul className="mt-7 space-y-3">
+              {highlights.map((h) => (
+                <li
+                  key={h}
+                  className="flex items-start gap-3 text-sm text-navy-700"
+                >
+                  <CheckCircle2
+                    size={20}
+                    className="mt-0.5 shrink-0 text-navy-600"
+                  />
+                  {h}
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </section>
 
-      <section className="bg-white pb-20">
+      <section className="section-py bg-soft-gradient">
         <div className="container-px mx-auto max-w-7xl">
-          <div className="overflow-hidden rounded-3xl border border-navy-100">
-            <iframe
-              title="Bản đồ Long Nhật Minh"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.187091882168!2d106.6351551746226!3d10.84102819226709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f5c7e8b8e7b%3A0x9a5c6e5b5c5e5b5c!2zMTE0NiA0MSBxdWFuZyBUcnVuZywgVGjDoG5nIFRo4buNIFRodeG6rW4gSG9pLCBUaMOgbmcgVGjhuqFjaCwgSG_DoG5nIEjDoCBO4buZaSwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1697040000000"
-              className="h-[380px] w-full"
-              loading="lazy"
-            />
+          <div className="mx-auto max-w-2xl text-center">
+            <span className="eyebrow">Giá trị cốt lõi</span>
+            <h2 className="section-title">An toàn - Chất lượng - Hiệu quả - Bền vững</h2>
           </div>
+
+          <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {values.map((v) => (
+              <div
+                key={v.title}
+                className="rounded-2xl border border-navy-100 bg-white p-7 shadow-sm transition-all hover:-translate-y-1 hover:shadow-card"
+              >
+                <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-navy-50 text-navy-700">
+                  <v.icon size={22} />
+                </span>
+                <h3 className="mt-5 text-lg font-bold text-navy-900">
+                  {v.title}
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-navy-500">
+                  {v.desc}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section-py bg-white">
+        <div className="container-px mx-auto max-w-4xl rounded-3xl bg-navy-950 px-8 py-14 text-center shadow-soft sm:px-14">
+          <h2 className="text-2xl font-extrabold text-white sm:text-3xl">
+            Sẵn sàng đồng hành cùng công trình của bạn
+          </h2>
+          <p className="mx-auto mt-3 max-w-xl text-sm text-navy-300 sm:text-base">
+            Liên hệ ngay để được kỹ sư Long Nhật Minh khảo sát, tư vấn giải
+            pháp và báo giá miễn phí.
+          </p>
+          <Link href="/lien-he" className="btn-gold mx-auto mt-8 w-fit">
+            Liên hệ với chúng tôi
+            <ArrowRight size={18} />
+          </Link>
         </div>
       </section>
     </>
