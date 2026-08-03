@@ -96,7 +96,7 @@ export default function LienHePage() {
           <div className="overflow-hidden rounded-3xl border border-navy-100">
             <iframe
               title="Bản đồ Long Nhật Minh"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.187091882168!2d106.6351551746226!3d10.84102819226709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f5c7e8b8e7b%3A0x9a5c6e5b5c5e5b5c!2zMTE0NiA0MSBxdWFuZyBUcnVuZywgVGjDoG5nIFRo4buNIFRodeG6rW4gSG9pLCBUaMOgbmcgVGjhuqFjaCwgSG_DoG5nIEjDoCBO4buZaSwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1697040000000"
+              src="https://www.google.com/maps/place/C%C3%94NG+TY+TNHH+K%E1%BB%B8+THU%E1%BA%ACT+LONG+NH%E1%BA%ACT+MINH/@10.8436855,106.6413688,17z/data=!4m6!3m5!1s0x67ff70db6ca431ad:0xeeef9e3369af7aec!8m2!3d10.8436802!4d106.6439437!16s%2Fg%2F11z944yx48?entry=ttu&g_ep=EgoyMDI2MDcyOS4wIKXMDSoASAFQAw%3D%3D"
               className="h-[380px] w-full"
               loading="lazy"
             />
