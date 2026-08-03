@@ -164,3 +164,18 @@ export const products: Product[] = [
     ],
   },
 ];
+
+export function getProductById(id: string) {
+  return products.find((p) => p.id === id) ?? null;
+}
+
+export function getProductsByCategory(category: CategorySlug) {
+  return products.filter((p) => p.category === category);
+}
+
+// Sản phẩm liên quan: cùng danh mục, không bao gồm chính nó, tối đa `limit` sản phẩm
+export function getRelatedProducts(product: Product, limit = 4) {
+  return products
+    .filter((p) => p.category === product.category && p.id !== product.id)
+    .slice(0, limit);
+}

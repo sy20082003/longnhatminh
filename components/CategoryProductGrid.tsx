@@ -3,7 +3,6 @@
 import { useState } from "react";
 import { ChevronLeft, ChevronRight, Search, X } from "lucide-react";
 import ProductCard from "@/components/ProductCard";
-import ProductModal from "@/components/ProductModal";
 import type { Product } from "@/lib/products";
 
 const PER_PAGE = 12;
@@ -19,7 +18,6 @@ function stripDiacritics(str: string) {
 }
 
 export default function CategoryProductGrid({ products }: { products: Product[] }) {
-  const [selectedId, setSelectedId] = useState<string | null>(null);
   const [page, setPage] = useState(0);
   const [query, setQuery] = useState("");
 
@@ -34,7 +32,6 @@ export default function CategoryProductGrid({ products }: { products: Product[] 
 
   const totalPages = Math.ceil(filtered.length / PER_PAGE);
   const paginated = filtered.slice(page * PER_PAGE, page * PER_PAGE + PER_PAGE);
-  const selectedProduct = products.find((p) => p.id === selectedId) ?? null;
 
   function handleQueryChange(value: string) {
     setQuery(value);
@@ -73,11 +70,7 @@ export default function CategoryProductGrid({ products }: { products: Product[] 
       {paginated.length > 0 ? (
         <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
           {paginated.map((product) => (
-            <ProductCard
-              key={product.id}
-              product={product}
-              onClick={() => setSelectedId(product.id)}
-            />
+            <ProductCard key={product.id} product={product} />
           ))}
         </div>
       ) : (
@@ -130,10 +123,6 @@ export default function CategoryProductGrid({ products }: { products: Product[] 
         <p className="mt-3 text-center text-xs text-navy-400">
           Trang {page + 1} / {totalPages} &nbsp;·&nbsp; {filtered.length} sản phẩm
         </p>
-      )}
-
-      {selectedProduct && (
-        <ProductModal product={selectedProduct} onClose={() => setSelectedId(null)} />
       )}
     </>
   );

@@ -1,22 +1,17 @@
 import { Eye } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import type { Product } from "@/lib/products";
 import { getCategoryBySlug } from "@/lib/categories";
 
-export default function ProductCard({
-  product,
-  onClick,
-}: {
-  product: Product;
-  onClick: () => void;
-}) {
+export default function ProductCard({ product }: { product: Product }) {
   const cover = product.images[0];
   const categoryName = getCategoryBySlug(product.category)?.name ?? product.category;
 
   return (
-    <button
-      onClick={onClick}
-      className="group overflow-hidden rounded-2xl border border-navy-100 bg-white text-left shadow-card transition-all hover:-translate-y-1 hover:shadow-soft"
+    <Link
+      href={`/san-pham/${product.category}/${product.id}`}
+      className="group block overflow-hidden rounded-2xl border border-navy-100 bg-white text-left shadow-card transition-all hover:-translate-y-1 hover:shadow-soft"
     >
       <div className="relative aspect-square overflow-hidden">
         <Image
@@ -44,6 +39,6 @@ export default function ProductCard({
         <p className="mt-1 text-sm font-bold leading-snug text-navy-800">{product.name}</p>
         <p className="mt-1.5 text-sm font-extrabold text-navy-900">Liên hệ báo giá</p>
       </div>
-    </button>
+    </Link>
   );
 }
