@@ -125,11 +125,11 @@ export const products: Product[] = [
   },
   {
     id: "thanh-dong-cai",
-    name: "Thanh đồng cái",
+    name: "Đồng thanh cái",
     category: "vat-tu-tiep-dia-chong-set",
     unit: "Cây",
     summary:
-      "Thanh đồng cái (thanh cái tiếp địa) dùng làm điểm đấu nối trung tâm cho hệ thống tiếp địa - chống sét công trình.",
+      "Đồng thanh cái (thanh cái tiếp địa) dùng làm điểm đấu nối trung tâm cho hệ thống tiếp địa - chống sét công trình.",
     details: [
       "Chất liệu đồng nguyên chất, dẫn điện tốt, chống oxy hóa",
       "Khoan sẵn lỗ bắt vít, thuận tiện đấu nối nhiều dây tiếp địa",
@@ -139,7 +139,7 @@ export const products: Product[] = [
     images: [
       {
         src: "/images/san_pham/vttd/thanh_dong_cai.jpg",
-        alt: "Thanh đồng cái",
+        alt: "Đồng thanh cái",
       },
     ],
   },
