@@ -141,6 +141,34 @@ export const products: Product[] = [
         src: "/images/san_pham/vttd/dong_thanh_cai.jpg",
         alt: "Đồng thanh cái",
       },
+      {
+        src: "/images/san_pham/vttd/dong_thanh_cai_1.jpg",
+        alt: "Đồng thanh cái",
+      },
+      {
+        src: "/images/san_pham/vttd/dong_thanh_cai_2.jpg",
+        alt: "Đồng thanh cái",
+      },
+      {
+        src: "/images/san_pham/vttd/dong_thanh_cai_3.jpg",
+        alt: "Đồng thanh cái",
+      },
+      {
+        src: "/images/san_pham/vttd/dong_thanh_cai_4.jpg",
+        alt: "Đồng thanh cái",
+      },
+      {
+        src: "/images/san_pham/vttd/dong_thanh_cai_5.jpg",
+        alt: "Đồng thanh cái",
+      },
+      {
+        src: "/images/san_pham/vttd/dong_thanh_cai_6.jpg",
+        alt: "Đồng thanh cái",
+      },
+      {
+        src: "/images/san_pham/vttd/dong_thanh_cai_7.jpg",
+        alt: "Đồng thanh cái",
+      },
     ],
   },
   {
