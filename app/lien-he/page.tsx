@@ -96,9 +96,12 @@ export default function LienHePage() {
           <div className="overflow-hidden rounded-3xl border border-navy-100">
             <iframe
               title="Bản đồ Long Nhật Minh"
-              src="https://www.google.com/maps/place/C%C3%94NG+TY+TNHH+K%E1%BB%B8+THU%E1%BA%ACT+LONG+NH%E1%BA%ACT+MINH/@10.8436855,106.6413688,17z/data=!4m6!3m5!1s0x67ff70db6ca431ad:0xeeef9e3369af7aec!8m2!3d10.8436802!4d106.6439437!16s%2Fg%2F11z944yx48?entry=ttu&g_ep=EgoyMDI2MDcyOS4wIKXMDSoASAFQAw%3D%3D"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.5765049945853!2d106.64136877451799!3d10.84368545795058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x67ff70db6ca431ad%3A0xeeef9e3369af7aec!2zQ8OUTkcgVFkgVE5ISCBL4bu4IFRIVeG6rFQgTE9ORyBOSOG6rFQgTUlOSA!5e0!3m2!1svi!2s!4v1785892491155!5m2!1svi!2s"
               className="h-[380px] w-full"
+              style={{ border: 0 }}
+              allowFullScreen
               loading="lazy"
+              referrerPolicy="strict-origin-when-cross-origin"
             />
           </div>
         </div>
