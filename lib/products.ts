@@ -118,13 +118,13 @@ export const products: Product[] = [
     ],
     images: [
       {
-        src: "/images/san_pham/vttd/khung_han_goldwweld.jpg",
+        src: "/images/san_pham/vttd/khung_han_goldweld.jpg",
         alt: "Khuôn hàn Goldweld",
       },
     ],
   },
   {
-    id: "thanh-dong-cai",
+    id: "dong-thanh-cai",
     name: "Đồng thanh cái",
     category: "vat-tu-tiep-dia-chong-set",
     unit: "Cây",
@@ -138,7 +138,7 @@ export const products: Product[] = [
     ],
     images: [
       {
-        src: "/images/san_pham/vttd/thanh_dong_cai.jpg",
+        src: "/images/san_pham/vttd/dong_thanh_cai.jpg",
         alt: "Đồng thanh cái",
       },
     ],
