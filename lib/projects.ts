@@ -197,11 +197,11 @@ export const projects: Project[] = [
   },
   {
     id: "nlmt-tba-220kv-ba-queo",
-    title: "Lắp đặt pin năng lượng mặt trời tại Trạm biến áp 220kV Bà Quẹo",
+    title: "Triển khai hệ thống năng lượng mặt trời tại Trạm biến áp 220kV Bà Quẹo",
     category: "Điện mặt trời",
     location: "Bà Quẹo, TP. Hồ Chí Minh",
     capacity: "220 kV",
-    year: "2026",
+    year: "15/08/2026",
     summary: "Cung cấp, lắp đặt hệ thống pin năng lượng mặt trời áp mái tại Trạm Biến Áp 220kV Bà Quẹo, cung cấp điện năng tự dùng cho hệ thống chiếu sáng và thiết bị phụ trợ trong trạm.",
     details: [
       "Khảo sát mái nhà trạm, đánh giá kết cấu chịu lực và hướng lắp đặt tấm pin tối ưu",
@@ -210,7 +210,7 @@ export const projects: Project[] = [
       "Đấu nối, kiểm tra vận hành và bàn giao hệ thống đảm bảo an toàn, ổn định",
     ],
     images: [
-      { src: "/images/nlmt_tba110kv_baqueo/a1.jpg", alt: "Lắp đặt pin năng lượng mặt trời Trạm biến áp 220kV Bà Quẹo" },
+      { src: "/images/nlmt_tba110kv_baqueo/a1.jpg", alt: "Triển khai hệ thống năng lượng mặt trời Trạm biến áp 220kV Bà Quẹo" },
       { src: "/images/nlmt_tba110kv_baqueo/a2.jpg" },
       { src: "/images/nlmt_tba110kv_baqueo/a3.jpg" },
       { src: "/images/nlmt_tba110kv_baqueo/a4.jpg" },
