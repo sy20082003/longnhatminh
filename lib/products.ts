@@ -85,11 +85,11 @@ export const products: Product[] = [
   },
   {
     id: "kep-khung-han",
-    name: "Kẹp khung hàn",
+    name: "Tay Kẹp khuôn hàn Goldweld",
     category: "vat-tu-tiep-dia-chong-set",
     unit: "Cái",
     summary:
-      "Kẹp khung hàn dùng để cố định khuôn hàn hóa nhiệt trong quá trình thi công mối nối tiếp địa.",
+      "Tay Kẹp khuôn hàn dùng để cố định khuôn hàn hóa nhiệt trong quá trình thi công mối nối tiếp địa.",
     details: [
       "Kết cấu chắc chắn, giữ chặt khuôn hàn trong lúc hàn",
       "Thao tác nhanh, thuận tiện khi thi công ngoài công trường",
@@ -99,7 +99,7 @@ export const products: Product[] = [
     images: [
       {
         src: "/images/san_pham/vttd/kep_khung_han.jpg",
-        alt: "Kẹp khung hàn",
+        alt: "Tay Kẹp khuôn hàn Goldweld",
       },
     ],
   },
