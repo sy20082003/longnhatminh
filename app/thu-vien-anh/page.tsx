@@ -10,17 +10,51 @@ import { projects } from "@/lib/projects";
 const categories = ["Tất cả", "Trạm biến áp", "Điện nhà xưởng", "Điện mặt trời"] as const;
 const PER_PAGE = 6;
 
+// Phân tích trường "year": có thể là ngày đầy đủ "dd/mm/yyyy" hoặc chỉ năm "yyyy"
+function parseProjectDate(year: string) {
+  const fullDateMatch = year.match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})$/);
+  if (fullDateMatch) {
+    const [, d, m, y] = fullDateMatch;
+    return {
+      hasFullDate: true,
+      year: Number(y),
+      time: new Date(Number(y), Number(m) - 1, Number(d)).getTime(),
+    };
+  }
+  return { hasFullDate: false, year: Number(year), time: 0 };
+}
+
+// Ưu tiên: 1) có ngày/tháng/năm đầy đủ (mới nhất trước) 2) năm hiện tại 3) các năm quá khứ (mới đến cũ)
+function sortProjectsByPriority<T extends { year: string }>(items: T[]): T[] {
+  const currentYear = new Date().getFullYear();
+
+  return items.slice().sort((a, b) => {
+    const infoA = parseProjectDate(a.year);
+    const infoB = parseProjectDate(b.year);
+
+    const groupOf = (info: ReturnType<typeof parseProjectDate>) =>
+      info.hasFullDate ? 0 : info.year === currentYear ? 1 : 2;
+
+    const groupA = groupOf(infoA);
+    const groupB = groupOf(infoB);
+
+    if (groupA !== groupB) return groupA - groupB;
+    if (groupA === 0) return infoB.time - infoA.time; // ngày đầy đủ: mới nhất lên đầu
+    return infoB.year - infoA.year; // năm hiện tại / quá khứ: mới đến cũ
+  });
+}
+
 export default function ThuVienAnhPage() {
   const [activeCategory, setActiveCategory] =
     useState<(typeof categories)[number]>("Tất cả");
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [page, setPage] = useState(0);
 
-const filtered = (
+  const filtered = sortProjectsByPriority(
     activeCategory === "Tất cả"
       ? projects
       : projects.filter((p) => p.category === activeCategory)
-  ).slice().sort((a, b) => Number(b.year) - Number(a.year));
+  );
 
   const totalPages = Math.ceil(filtered.length / PER_PAGE);
   const paginated = filtered.slice(page * PER_PAGE, page * PER_PAGE + PER_PAGE);
