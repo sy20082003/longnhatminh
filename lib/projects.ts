@@ -264,7 +264,7 @@ export const projects: Project[] = [
     category: "Điện mặt trời",
     location: "Phước Lý, Tây Ninh",
     capacity: "110 kV",
-    year: "2026",
+    year: "13/08/2026",
     summary: "Vận chuyển, lắp đặt thiết bị và triển khai hệ thống điện mặt trời áp mái trên nhà điều hành Trạm Biến Áp 110kV Phước Lý, Tây Ninh, cung cấp điện năng tự dùng cho trạm.",
     details: [
       "Vận chuyển thiết bị (tủ điện, cáp, vật tư) đến công trường và kiểm tra đối chiếu trước khi lắp đặt",
